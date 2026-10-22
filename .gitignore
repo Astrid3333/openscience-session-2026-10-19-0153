@@ -1,0 +1,10 @@
+.DS_Store
+*.swp
+*.swo
+*~
+*.zip
+skill_content_review.py
+regenerate_skill_content_review.py
+pasted*.txt
+alkahest_octave_chain.png
+maxima_laplace_ode.png
