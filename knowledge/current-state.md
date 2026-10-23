@@ -8,22 +8,18 @@
   de clase newforms, cross-check multi-motor Lispium, cadena
   tensorial/fermiones Cadabra2, despacho multi-CAS y batería
   cross-check **5-CAS** (4 + alkahest) + sección ODE/Laplace vs
-  oráculo sympy, documentada en SKILL.md.
-- Current task: «solucionemos lo roto» resuelto — el supuesto bug de
-  `desolve` en sagebrush era **falsa alarma**: `function('y', t)`
-  devuelve un closure sin aplicar (TypeError al sumar); la forma
-  correcta `function('y')(t)` funciona y coincide con maxima (1ª y 2ª
-  orden, ics, forzada — verificado por residuo). Batería **55/55**
-  (+4 checks ODE sagebrush, pin renombrado `pin-sage-function-aplica`);
-  `laplace` es gap real de sagebrush (NameError, documentado).
-  SKILL.md + skill_content actualizados (`check_sync() == True`).
-- Verification state: suite 371 registradas / 353 evaluadas /
-  353 PASSED / 0 FAILED / 0 ERROR / 18 SKIPPED;
-  commits `0d61934`…`f0de65e` + cross-check v2 `8a07df3` pushados;
-  commit de la fase desolve pendiente de push.
-- Known pending (pasted-7): **ninguno** — no hay nada roto abierto:
-  ODEs cubiertas por maxima + sagebrush; `laplace` solo maxima
-  (gap upstream documentado); alkahest/lispium/cadabra2 sin ODE por
-  diseño (feature absence, no bug).
-- Next action: commit+push de la fase desolve y checkpoint; después
+  oráculo sympy (incluye ilt, ode2 2º orden con ic2, desolve_rk4
+  numérico, hints de campo del router), documentada en SKILL.md.
+- Current task: ciclo «5 adiciones en orden» cerrado — batería
+  **63/63 PASS** (+ilt×2 con pin de orden, +ode2 2º orden con
+  ic2, +desolve_rk4 vs analítica, +router laplace/ode, +pin
+  `pin-maxima-ilt-orden`); `run_validations_guarded.py` ahora usa la
+  batería como 2º gate (suite → battery → exit 0 solo si ambas);
+  router validate 10→12 checks. SKILL.md + skill_content actualizados.
+- Verification state: guard exit 0; suite 371 registradas / 353
+  evaluadas / 353 PASSED / 0 FAILED / 0 ERROR / 18 SKIPPED;
+  batería 63/63; ruff limpio en archivos tocados.
+- Known pending (pasted-7): **ninguno** — no hay nada roto abierto.
+  Sugerido: enganchar `run_validations_guarded.py` en un pre-push hook.
+- Next action: commit+push del ciclo 5-adiciones y checkpoint; después
   pedir al usuario qué sigue.
