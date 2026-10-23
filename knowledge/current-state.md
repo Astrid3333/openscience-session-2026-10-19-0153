@@ -19,7 +19,7 @@
 - Verification state: guard exit 0; suite 371 registradas / 353
   evaluadas / 353 PASSED / 0 FAILED / 0 ERROR / 18 SKIPPED;
   batería 63/63; ruff limpio en archivos tocados.
-- Known pending (pasted-7): **ninguno** — no hay nada roto abierto.
-  Sugerido: enganchar `run_validations_guarded.py` en un pre-push hook.
-- Next action: commit+push del ciclo 5-adiciones y checkpoint; después
-  pedir al usuario qué sigue.
+- Known pending (pasted-7): **ninguno** — pre-push hook con el guard
+  instalado y verificado end-to-end (push `8e7e9d7` pasó con
+  353/353 + 63/63).
+- Next action: pedir al usuario qué sigue.
