@@ -6,22 +6,27 @@
   (CAS de álgebra tensorial) + **cas_router_math_tool** (router
   unificado de los 4) integradas; ejercicios demo Laplace→ODE, número
   de clase newforms, cross-check multi-motor Lispium, cadena
-  tensorial/fermiones Cadabra2 y despacho multi-CAS.
-- Current task: router unificado integrado (decisión del usuario, no
-  cerrar el backlog): `cas_router_math_tool` despacha en proceso vía
-  tool_registry (sin wire), ruteo engine>field>sniff>default-maxima,
-  fallback encadenado con log `attempts[]`, op=guia con tabla; 10
-  validate checks (adaptadores descubiertos en smoke: cadabra2 envuelto
-  en evaluate(Ex), sagebrush op=sage con nombres Sage `euler_phi` no
-  `eulerphi`, lispium potencia `(^ 2 10)` — `expt` es eco silencioso);
-  ejemplo `examples/cas_router_dispatch.py` 9/9 PASS.
+  tensorial/fermiones Cadabra2, despacho multi-CAS y batería
+  cross-check 4-CAS vs oráculo sympy.
+- Current task: cross-check multi-motor integrado (decisión del
+  usuario): `examples/multi_cas_crosscheck.py` resuelve 13 problemas
+  en los 4 motores (derivada, integral, factor, sistema, gcd, limit,
+  primalidad, big-int, identidad, det, totient, factorial, Basel) y
+  compara contra sympy; adaptadores descubiertos por sonda: sagebrush
+  es shim sin Sage real (`x, y = var('x y')` porque `var()` no
+  inyecta en globals; `symbolic_sum(expr,var,a,b)` para series),
+  maxima `determinant(...)` y noun-forms con ok=True, lispium
+  parser s-expr propio + floats en big-int/factorial + eco de
+  simplify, cadabra2 `**` sin `D` en eval. 6 pins de quirks.
+  Resultado: ruff limpio, ejemplo **34/34 PASS**.
 - Verification state: suite 371 registradas / 353 evaluadas /
   353 PASSED / 0 FAILED / 0 ERROR / 18 SKIPPED;
   health_check "healthy" (353 passed / 0 failed / 18 skipped);
-  commits `0d61934`…`7f7db8f` + router pushados a
-  `origin/migracion-mcp-octave-real`.
+  commits `0d61934`…`7f7db8f` + router `dc85ea4` + cross-check
+  `f0de65e` pushados a `origin/migracion-mcp-octave-real`.
 - Known pending (pasted-7): **ninguno** — todos los CAS integrados
   (alkahest, maxima, sagebrush, lispium, cadabra2, router) o
   descartados con evidencia (calnexus); backlog vacío.
-- Next action: pedir al usuario qué sigue (backlog vacío); posibles
-  líneas: más cross-checks de engines, documentación, o nueva meta.
+- Next action: pedir al usuario qué sigue; posibles líneas: más
+  cross-checks (p. ej. alkahest en la batería, ODE/laplace entre
+  motores), documentación, o nueva meta.
