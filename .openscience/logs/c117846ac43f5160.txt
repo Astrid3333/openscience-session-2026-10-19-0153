@@ -1,0 +1,4 @@
+  File "/home/astrid/octave-mcp/skills/octave-mcp/regenerate_skill_content.py", line 56
+    if '"""' in text:
+           ^
+SyntaxError: unterminated string literal (detected at line 56)

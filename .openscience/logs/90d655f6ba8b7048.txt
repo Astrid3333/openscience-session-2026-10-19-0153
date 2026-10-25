@@ -1,0 +1,2 @@
+location: /home/astrid/octave-mcp/skills/octave-mcp/SKILL.md
+desc head: Use when the user wants scientific/numeric computation served by their local GNU

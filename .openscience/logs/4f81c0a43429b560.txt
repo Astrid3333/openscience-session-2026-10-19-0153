@@ -1,0 +1,6 @@
+SG "var('x y')\nprint('y' in globals())" -> ok= True 'False' 
+SG 'print(sorted(k for k in globals() if len(k)==' -> ok= True "['I', 'N', 'O', 'e', 'n', 'x']" 
+SG "x = var('x')\nprint('x' in globals())" -> ok= True 'True' 
+LP '(simplify (+ (^ (+ x 1) 2) (* -1 (^ x 2)) (* -2 x) -1))' -> ok= True '; (simplify (+ (^ (+ x 1) 2) (* -1 (^ x 2)) (* -2 x) -1))\n(+ (^ (+ x 1) 2) (- (^ x 2)) (* -2 x) -1)'
+LP '(simplify 0)' -> ok= True '; (simplify 0)\n0'
+LP '(* x 1)' -> ok= True '; (* x 1)\n(* x 1)'

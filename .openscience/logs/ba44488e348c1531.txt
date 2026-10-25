@@ -1,0 +1,29 @@
+regenerate_skill_content.py:3: SyntaxWarning: invalid escape sequence '\ '
+  """Regenera skill_content.py a partir de SKILL.md (mismo directorio).
+COMPILE-OK
+regenerado /home/astrid/octave-mcp/skills/octave-mcp/skill_content.py (10703 bytes) desde SKILL.md
+=== 1) imprime identico a SKILL.md:
+/home/astrid/octave-mcp/skills/octave-mcp/regenerate_skill_content.py:3: SyntaxWarning: invalid escape sequence '\ '
+  """Regenera skill_content.py a partir de SKILL.md (mismo directorio).
+OK-cmp
+=== 2) metadata derivada:
+name: octave-mcp
+=== 3) import + sync:
+sync: True | name: octave-mcp
+=== 4) copia suelta sin .md:
+sync: None | usa embebido: True
+=== 5) stdlib-only:
+OK, sync: True
+=== 6) negativo .md editado:
+AssertionError OK
+=== 7) CRLF en .md no vacia el frontmatter:
+SKILL_NAME con CRLF: octave-mcp | check_sync (binario): AssertionError OK
+=== 8) NUEVO: generador falla claro con 3x comillas en el .md:
+error: SKILL.md contiene tres comillas dobles seguidas en la posicion 459 (contexto: 'ole tool suite.\n---\n\nejemplo: """ aqui\n\nA local MCP server e'). Cerrarian el literal r-string por medio. Reformula esa frase del .md (p. ej. 'comillas triple seguidas' sin escribirlas).
+exit=1
+=== 9) NUEVO: generador falla claro con backslash en el .md:
+error: SKILL.md contiene un backslash en la posicion 457 (contexto: 'whole tool suite.\n---\n\nregex: \\n literal aqui\n\nA local MCP s'). El literal embebido es r-string: un backslash futuro del markdown no puede representarse sin duplicarlo a mano. Elimina ese backslash del .md (escapalo como texto plano) o cambia el esquema del generador.
+exit=1
+=== 10) NUEVO: generador falla claro con CRLF:
+error: SKILL.md contiene CR (lineas CRLF). Conviertelo a LF antes de regenerar: check_sync() compara bytes y el r-string solo representa LF correctamente.
+exit=1

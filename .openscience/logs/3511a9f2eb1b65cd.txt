@@ -1,0 +1,4 @@
+sin(t)*Heaviside(t)
+cos(t)*Heaviside(t)
+diff: (1 - Heaviside(t))*sin(t)
+(1 - Heaviside(t))*cos(t)

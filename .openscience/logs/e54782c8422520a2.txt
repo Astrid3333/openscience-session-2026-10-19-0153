@@ -1,0 +1,16 @@
+exit=0
+======================================================================
+RESUMEN
+======================================================================
+  Total tools registradas:        366
+  Con modo validate (evaluadas):  348
+  PASSED:                         348
+  FAILED:                         0
+  ERROR:                          0
+  SKIPPED (sin modo validate):    18
+======================================================================
+
+--- TOOLS SKIPPED (18) ---
+  (usar --verbose para ver la lista completa con motivos)
+
+RESULTADO FINAL: todas las tools con modo validate pasaron OK.

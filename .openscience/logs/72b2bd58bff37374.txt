@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+AssertionError: SKILL.md contiene comillas triple: replantea el literal
+=== 1) imprime identico a SKILL.md:
+- SKILL.md differ: byte 4796, line 101
+=== 2) metadata derivada del frontmatter:
+name: octave-mcp
+=== 3) import + sync + constantes:
+Traceback (most recent call last):
+  File "<string>", line 6, in <module>
+AssertionError
+=== 4) copia suelta en /tmp (sin .md): usa embebido:
+Traceback (most recent call last):
+  File "<string>", line 5, in <module>
+AttributeError: module 'sc' has no attribute '_SKILL_MD_EMBEDDED'
+=== 5) stdlib-only:
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+  File "/home/astrid/octave-mcp/skills/octave-mcp/skill_content.py", line 155, in check_sync
+    raise AssertionError("skill_content.py esta desincronizado de SKILL.md")
+AssertionError: skill_content.py esta desincronizado de SKILL.md

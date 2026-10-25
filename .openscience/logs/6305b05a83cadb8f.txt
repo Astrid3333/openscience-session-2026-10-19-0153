@@ -1,0 +1,13 @@
+{
+  "status": "ok",
+  "elapsed_seconds": 3.2,
+  "total_tools_registered": 3,
+  "with_validate_mode": 0,
+  "overall_health": "healthy",
+  "passed_count": 0,
+  "failed_count": 0,
+  "error_count": 0,
+  "skipped_count": 3,
+  "failed_tools": [],
+  "errored_tools": []
+}

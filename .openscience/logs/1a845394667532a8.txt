@@ -1,0 +1,6 @@
+validation_passed: True | checks=16
+factorint(18446744073709551617) -> engine=sympy_fallback 0.89s {'fallback_reason': 'alkahest: crash signal 4 (SIGILL)', 'factors': {'274177': 1, '67280421310721': 1}}
+totient(18446744073709551617) -> engine=sympy_fallback 0.81s {'fallback_reason': 'alkahest: crash signal 4 (SIGILL)', 'totient': 18446676793287966720}
+nextprime(1329227995784915872903807060280344576) -> engine=sympy_fallback 0.85s {'fallback_reason': 'alkahest: crash signal 4 (SIGILL)', 'nextprime': 1329227995784915872903807060280345027}
+isprime(18446744073709551617) -> engine=alkahest 0.15s {'isprime': False}
+factorint(2^32-1) -> engine=alkahest 0.15s {'3': 1, '5': 1, '17': 1, '257': 1, '65537': 1}

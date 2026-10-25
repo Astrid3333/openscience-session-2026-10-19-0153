@@ -1,0 +1,3 @@
+shapiro: {"mode": "normality_tests", "test": "shapiro", "statistic": 0.9867621554477195, "p_value": 0.9671739359680402, "n": 5, "reject_normality_at_0.05": false, "validation": "scipy.stats (implementacion de 
+chi2: {"mode": "contingency_table", "observed": [[10.0, 20.0], [30.0, 40.0]], "expected": [[12.0, 18.0], [28.0, 42.0]], "chi2_statistic": 0.4464285714285714, "degrees_of_freedom": 1, "p_value": 0.5040358664525046, "validation": "scipy.stats.chi2_contingenc
+ttest: {"mode": "two_sample_tests", "test": "ttest_ind", "statistic": -4.3817804600413295, "p_value": 0.004659214943993928, "n_x": 4, "n_y": 4, "validation": "scipy.stats (implementacion de referencia)", "welch_correction": true}

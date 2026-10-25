@@ -1,0 +1,7 @@
+./ethnomath_hybrid_tool.py
+./octave_math_tool.py
+./mesh_spectral_tool.py
+./mesh_pde_tool.py
+./bem_electromagnetic_tool.py
+---octave symbolic---
+sympy laplace: 2/(s**2 + 4)

@@ -1,0 +1,4 @@
+passed: True
+ - True | lorenz no diverge (bounded |x|,|y|,|z| < 100) | {'x': [-17.2345, 19.5542], 'y': [-22.755, 27.1837], 'z': [0.9617, 47.8349]}
+ - True | efecto mariposa: distancia final (t=40) >> 1e-8 inicial (umbral d > 1.0) | {'d_final': 8.2049}
+ - True | rossler: z_min > -5 (atractor no colapsa a valores extremos negativos) | {'z_min': 0.0135}

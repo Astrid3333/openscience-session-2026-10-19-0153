@@ -1,0 +1,8 @@
+pkg: downloading latest package database from packages.octave.org...
+pkg: this may take a moment, please wait...
+error: pkg: please install the Debian package "octave-dev" to get the mkoctfile command
+error: called from
+    __gripe_missing_component__ at line 60 column 3
+    configure_make at line 46 column 7
+    install at line 204 column 7
+    pkg at line 692 column 9

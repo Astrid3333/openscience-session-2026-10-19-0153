@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+  File "/home/astrid/octave-mcp/alkahest_cas_tool.py", line 948, in _alkahest_cas_handler
+    return _compute(args)
+           ^^^^^^^^^^^^^^
+  File "/home/astrid/octave-mcp/alkahest_cas_tool.py", line 383, in _compute
+    {"value": str(val), "mult": int(mult), "basis": _cells(basis)}
+                                                    ^^^^^^^^^^^^^
+  File "/home/astrid/octave-mcp/alkahest_cas_tool.py", line 310, in _cells
+    return [[str(c) for c in row] for row in rows]
+            ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'builtins.Matrix' object is not iterable

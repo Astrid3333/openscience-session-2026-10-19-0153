@@ -1,0 +1,7 @@
+{
+  "paths": [
+    "/home/astrid/Documents/OpenScience/sessions/2026-10-15-1617/bend-mcp/skills"
+  ]
+}
+=== esquema de skills:
+https://opencode.ai/config.json

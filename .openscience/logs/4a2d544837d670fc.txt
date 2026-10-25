@@ -1,0 +1,10 @@
+SAGE:
+  "k = var('k')\nprint(summation(1/k^2, (k, 1, oo)))" -> Traceback (most recent call last):
+  File "<cell>", line 2, in <module>
+NameError: name 'summation' is not defined
+  'print(factorial(20))' -> 2432902008176640000
+  "x, y = var('x y')\nprint(matrix(ZZ, [[1,2],[3,4]]).de" -> -2
+  "print([n for n in dir() if 'sum' in n.lower() or 'fa" -> ['Factorization', 'assume', 'assuming', 'assumptions', 'factor', 'factorial', 'sum', 'symbolic_sum']
+MAXIMA:
+  factorial(20) -> True '2432902008176640000'
+  determinant(matrix([1,2],[3,4])) -> True '-2'

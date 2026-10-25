@@ -1,0 +1,7 @@
+1 factor product: A_{x} B^{x}
+Traceback (most recent call last):
+  File "<stdin>", line 8, in <module>
+TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:
+    1. cadabra2.AntiSymmetric(ex: cadabra2.Ex, param: cadabra2.Ex = )
+
+Invoked with: 'A'

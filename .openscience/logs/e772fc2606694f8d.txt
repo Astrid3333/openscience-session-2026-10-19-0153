@@ -1,0 +1,5 @@
+raw Ex 1+1 : 1 + 1
+evaluate -> 2
+nevaluate ERR: nevaluate(): incompatible function arguments. The following argument types are s
+delta canon+reduce: δ^{m}_{n} A_{m}
+anticommuting: ψ_{1} ψ_{2} + ψ_{2} ψ_{1}

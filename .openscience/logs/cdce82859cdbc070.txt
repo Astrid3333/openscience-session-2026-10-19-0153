@@ -1,0 +1,6 @@
+3a canonicalise: \partial_{x}(f) \partial_{y}(f)-\partial_{x}(f) \partial_{y}(f)
+3b simplify    : \partial_{x}(f) \partial_{y}(f)-\partial_{x}(f) \partial_{y}(f)
+3c collect     : 0
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+RuntimeError: A list property cannot be assigned to a single object.

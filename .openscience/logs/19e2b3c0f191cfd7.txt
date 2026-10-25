@@ -1,0 +1,25 @@
+TOOLS: 364 | sin handler: 5 ['octave_eval_expr', 'octave_run', 'octave_run_script', 'octave_version', 'run_octave']
+--- id 2 | error: True
+ModuleNotFoundError: No module named 'umap'
+--- id 3 | error: None
+{
+  "mode": "validate",
+  "n_steps": 2,
+  "trace": [
+    {
+      "step": 0,
+      "tool": "compute_gradient_hessian",
+      "save_as": "grad",
+      "args_resolved": {
+        "expression": "x**2*sin(y) + exp(x*y)",
+        "variables": "x,y",
+        "order": 1
+      },
+      "elapsed_seconds": 0.294165
+    },
+    {
+      "step": 1,
+      "tool": 
+--- id 4 | error: None
+4
+

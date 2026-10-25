@@ -1,0 +1,7 @@
+octave_math_tool.py:380:    - op: 'laplace' | 'fourier' | 'fft' | 'ifft'
+octave_math_tool.py:381:    - expr: para laplace/fourier (simbólico); data: lista para fft.
+octave_math_tool.py:401:    elif op in ("laplace", "fourier"):
+octave_math_tool.py:405:        if op == "laplace":
+octave_math_tool.py:411:  F = laplace(f, {var}, {s_var});
+=== sympy ilt ===
+sympy ilt OK: -75*sin(2*t)/241 - 20*cos(2*t)/241 + 385*sqrt(6)*exp(-t/5)*sin(2*sqrt(6)*t/5)/1446 + 20*exp(-t/5)*cos(2*sqrt(6)*t/5)/241

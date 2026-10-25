@@ -1,0 +1,3 @@
+REGISTRY keys: 0
+deprecated schemas: 0
+LEGACY-ONLY (sin handler): 99 de 99 entradas legacy

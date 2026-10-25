@@ -1,0 +1,6 @@
+Ex sig: 1. cadabra2.Ex(input_form: str, make_ref: bool = True, kernel: cadabra2.Kernel = None)
+delta canon: δ^{m}_{n} A_{m}
+grassmann: ψ_{1} ψ_{2} + ψ_{2} ψ_{1}
+distribute pow: (x + y)**2
+expand pow    : (x + y)**2
+autoeval: 1 + 1 | 6 + 1

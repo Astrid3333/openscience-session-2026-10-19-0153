@@ -1,0 +1,4 @@
+n: 1
+val: Expr x | mult: 2 | basis type: list len 1
+  col[0] type: Matrix [[-1], [0]]
+   to_list: [[-1], [0]]

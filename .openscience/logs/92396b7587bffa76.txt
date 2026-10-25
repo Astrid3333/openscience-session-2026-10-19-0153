@@ -1,0 +1,17 @@
+regenerado 9795 bytes
+=== 1) imprime identico a SKILL.md:
+OK-cmp
+=== 2) metadata derivada:
+name: octave-mcp
+=== 3) import + sync:
+sync: True | name: octave-mcp
+=== 4) copia suelta (sin .md) usa embebido:
+sync: None | SKILL_MD==embebido: True | imprime 6671 chars
+=== 5) stdlib-only:
+OK, sync: True
+=== 6) NEGATIVO: .md editado -> AssertionError + lectura runtime del vigente:
+AssertionError OK: skill_content.py esta desincronizado de 
+SKILL_MD lee el .md vigente: True | embebido divergente: True
+=== 7) backslash en el .md no se corrompe al leerlo del disco:
+main() preserva el backslash byte a byte: True | sync detecta divergencia:
+  AssertionError OK

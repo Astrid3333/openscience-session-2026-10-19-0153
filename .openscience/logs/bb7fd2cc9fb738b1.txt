@@ -1,0 +1,4 @@
+validate: False | 19 passed | failed=3
+Traceback (most recent call last):
+  File "<stdin>", line 12, in <module>
+KeyError: 'detail'

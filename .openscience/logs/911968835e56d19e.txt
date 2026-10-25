@@ -1,0 +1,17 @@
+validation_passed: True | checks: 15
+las 15 en verde
+  OK diff_analytic_vs_numeric -> max_err=0.000e+00
+  OK integrate_definite_x2 -> value=8/3, eval=2.6666666666666665
+  OK integrate_definite_cos -> eval=1.7432001987807748
+  OK simplify_rational -> max_err=0.000e+00
+  OK limit_sin_over_x -> 1
+  OK series_exp_truncation -> max_err=1.110e-16, O(x^6)=True
+  OK solve_quadratic_roots -> roots=[-2.0, 2.0]
+  OK solve_system_residuals -> solutions=2, max_residual=0.000e+00
+  OK sum_definite_k2 -> max_err=5.684e-14
+  OK sum_indefinite_k -> max|dF-k|=0.000e+00, F(7)=21.0
+  OK nt_isprime -> {'2**61-1': True, '2**32-1': False, '15485863': True}
+  OK nt_factorint -> {'3': 1, '5': 1, '17': 1, '257': 1, '65537': 1}
+  OK nt_totient_nextprime -> {'totient(97)': 96, 'nextprime(100)': 101}
+  OK derived_result_contract -> steps=6, bytes=1212
+  OK certificate_lean_export -> has_certificate=True, status=certificate_available, len=1177, head='im

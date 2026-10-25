@@ -1,0 +1,6 @@
+4c eliminate_metric: g_{m}^{k}
+4d reduce_delta    : g_{m n} g^{n k}
+5a map_sympy: x^{2} + 2x + 1
+5b backend type: scalar_backend_t ['mathematica', 'name', 'sympy', 'value']
+6 substitute: x^{2} + y
+7 collect_terms: \partial_{x}(f) \partial_{y}(f)-\partial_{y}(f) \partial_{x}(f)

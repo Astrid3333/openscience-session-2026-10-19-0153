@@ -1,0 +1,5 @@
+All checks passed!
+    OK   ilt-sin-maxima: L^-1{1/(s^2+1)} = sin(t)
+    OK   ilt-cos-maxima: L^-1{s/(s^2+1)} = cos(t)
+    OK   pin-maxima-ilt-orden: ilt con el orden de laplace (f,t,s) -> ok=True con delta(s)/(s^2+1): ilt va (f,s,t), y ok True no es exito
+    63/63 PASS

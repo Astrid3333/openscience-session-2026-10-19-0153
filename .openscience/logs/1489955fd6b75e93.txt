@@ -1,0 +1,6 @@
+For information about changes from previous versions of the control package, run 'news control'.
+Please report any issues with the control package at "https://github.com/gnu-octave/pkg-control/issues"
+Package Name  | Version | Installation directory
+--------------+---------+-----------------------
+     control  |   4.2.3 | .../xdg-data/octave/api-v61/packages/control-4.2.3
+1 packages installed

@@ -1,0 +1,32 @@
+EXIT=1
+412 /tmp/opencode/validations.txt
+  [PASSED] soil_water_flow_tool  (8 checks)
+  [PASSED] bloch_equation_tool  (0 checks)
+  [PASSED] ternary_representation_tool  (0 checks)
+  [PASSED] arm_prosthesis_biomech_tool  (5 checks)
+  [PASSED] ion_chemistry_tool  (0 checks)
+  [PASSED] fault_dislocation_tool  (6 checks)
+  [PASSED] genetic_ternary_encoder_tool  (6 checks)
+  [PASSED] ethnomath_hybrid_tool  (10 checks)
+
+--- TOOLS SKIPPED (18) ---
+  [SKIPPED] composite_homogenization_tool  -- sin modo validate en el schema
+  [SKIPPED] concrete_design_tool  -- sin modo validate en el schema
+  [SKIPPED] ethnomath_comparative_tool  -- sin modo validate en el schema
+  [SKIPPED] eurocode_steel_tool  -- sin modo validate en el schema
+  [SKIPPED] fire_design_tool  -- sin modo validate en el schema
+  [SKIPPED] materials_db_tool  -- sin modo validate en el schema
+  [SKIPPED] optical_sequence_id_2d_tool  -- sin modo validate en el schema
+  [SKIPPED] pdelta_tool  -- sin modo validate en el schema
+  [SKIPPED] polarization_mapping_stokes_tool  -- sin modo validate en el schema
+  [SKIPPED] run_math_pipeline  -- mode=validate ejecuta un pipeline default, no un autochequeo
+  [SKIPPED] run_octave  -- sin modo validate en el schema
+  [SKIPPED] statistics_extended_tool  -- sin modo validate en el schema
+  [SKIPPED] timber_design_tool  -- sin modo validate en el schema
+  [SKIPPED] workspace_delete  -- sin modo validate en el schema
+  [SKIPPED] workspace_describe  -- sin modo validate en el schema
+  [SKIPPED] workspace_list  -- sin modo validate en el schema
+  [SKIPPED] workspace_load  -- sin modo validate en el schema
+  [SKIPPED] workspace_save  -- sin modo validate en el schema
+
+RESULTADO FINAL: 2 fallidas, 6 con error. Revisar arriba.

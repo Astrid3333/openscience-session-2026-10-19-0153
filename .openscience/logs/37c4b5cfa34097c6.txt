@@ -1,0 +1,21 @@
+exit=1
+--- TOOLS CON VALIDACION FALLIDA ---
+
+  [FAILED] attractor_trajectory
+      - check fallido: {"name": "efecto mariposa: distancia final (t=30) >> 1e-8 inicial (umbral d > 1.0)", "passed": false, "got": {"d_final": 0.1795}}
+
+--- TOOLS CON ERROR ---
+
+  [ERROR] frame_analysis_tool
+      respuesta valida pero sin campo 'validation_passed'
+
+  [ERROR] compute_hilbert_transform
+      formato de respuesta inesperado: Expecting value: line 1 column 1 (char 0)
+
+  [ERROR] dft_tool
+      formato de respuesta inesperado: Expecting value: line 1 column 1 (char 0)
+
+--- TOOLS SKIPPED (18) ---
+  (usar --verbose para ver la lista completa con motivos)
+
+RESULTADO FINAL: 1 fallidas, 3 con error. Revisar arriba.

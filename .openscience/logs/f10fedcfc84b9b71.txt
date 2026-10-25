@@ -1,0 +1,3 @@
+41:  canonical list is `VALIDATION_FIELD_ALIASES` in `run_all_validations.py`).
+46:  mapping is in `run_all_validations.py`
+219:.venv/bin/python run_all_validations.py --verbose   # ~2.5 min, 4 workers

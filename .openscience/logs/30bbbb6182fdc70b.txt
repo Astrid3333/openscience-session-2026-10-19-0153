@@ -1,0 +1,8 @@
+timeout: the monitored command dumped core
+  exit=0 (n=2**64+1)
+n=2**61-1 -> {2305843009213693951: 1}
+  exit=0 (n=2**61-1)
+n=10**18+3 -> {1000000000000000003: 1}
+  exit=0 (n=10**18+3)
+timeout: the monitored command dumped core
+  exit=0 (n=2**71-1)

@@ -1,0 +1,9 @@
+x^2                  -> x(UP2)
+x**2                 -> x**2
+2*x                  -> 2*x
+x*y                  -> x*y
+(x+1)^2              -> ERR ('unexpected character after line continuation character', (1, 24))
+x + y                -> x + y
+A_{m n} A^{m n}      -> A(DNm, DNn)*A(UPm, UPn)
+\partial_x{f}        -> Derivative(DNx, f)
+Coordinate OK -> x(UP2)

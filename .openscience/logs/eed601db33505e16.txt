@@ -1,0 +1,9 @@
+ilt orden (f,s,t):
+  ilt(1/(s^2+1),s,t) -> sin(t)
+  ilt(s/(s^2+1),s,t) -> cos(t)
+  ilt(1/(s-2),s,t) -> %e^(2*t)
+  ilt(1/((s-1)*(s-2)),s,t) -> %e^(2*t)-%e^t
+ic1 2o orden variantes:
+  ic1(ode2('diff(y,x,2)+y=0,y,x), x=0, y=1, 'diff(y,x)=0) -> ERR Too many arguments supplied to ic1(soln,xc,yc); found: [y = %k1*sin(x)+%k2*cos(x
+  at(ic1(ode2('diff(y,x,2)+y=0,y,x), x=0, y=1, 'diff(y,x)=0), x=0) -> ERR x = 0)) Too many arguments supplied to ic1(soln,xc,yc); found: [y = %k1*sin(x)+%
+  ic2(ode2('diff(y,x,2)+y=0,y,x), x=0, y=1, 'diff(y,x)=0) -> y = cos(x)

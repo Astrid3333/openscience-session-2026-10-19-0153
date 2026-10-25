@@ -1,0 +1,5 @@
+sympy: x(UP2) + 1 | symbols: ['UP2']
+sympy2: x + y | symbols: ['x', 'y']
+sub x -> 1 + y
+sub x -> a + y
+sub A_{m n} -> B_{n m}

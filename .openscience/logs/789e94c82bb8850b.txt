@@ -1,0 +1,17 @@
+validate: True | 22 checks | failed=0
+OK  eigenvals: {"operation": "matrix", "action": "eigenvals", "ok": true, "shape": [2, 2], "eigenvals": {"1": 1, "3": 1}}
+OK  eigenvects numeric: {"operation": "matrix", "action": "eigenvects", "ok": true, "shape": [2, 2], "eigenvects": [{"value": "1", "mult": 1, "basis": [["[-1]", "[1]"]]}, {"value": "3"
+OK  eigenvects symbolic: {"operation": "matrix", "action": "eigenvects", "ok": true, "shape": [2, 2], "eigenvects": [{"value": "x", "mult": 2, "basis": [["[-1]", "[0]"]]}]}
+OK  inverse: {"operation": "matrix", "action": "inverse", "ok": true, "shape": [2, 2], "inverse": [["2/3", "-1/3"], ["-1/3", "2/3"]]}
+OK  det: {"operation": "matrix", "action": "det", "ok": true, "shape": [2, 2], "det": "3"}
+OK  rank: {"operation": "matrix", "action": "rank", "ok": true, "shape": [2, 2], "rank": "1"}
+OK  jordan: {"operation": "matrix", "action": "jordan_form", "ok": true, "shape": [2, 2], "jordan": {"P": [["-1", "-1"], ["1", "-1"]], "J": [["1", "0"], ["0", "3"]]}}
+OK  rref: {"operation": "matrix", "action": "rref", "ok": true, "shape": [2, 2], "rref": [["1", "2"], ["0", "0"]]}
+OK  trace: {"operation": "matrix", "action": "trace", "ok": true, "shape": [2, 2], "trace": "(2 + 2)"}
+OK  jacobian: {"operation": "jacobian", "ok": true, "vars": ["x", "y"], "shape": [2, 2], "jacobian": [["y", "x"], ["-1", "(y * 2)"]]}
+OK  dioph linear: {"operation": "diophantine", "ok": true, "vars": ["x", "y"], "kind": "parametric_linear", "solution": "DiophantineSolution(kind=\"parametric_linear\")", "parame
+OK  dioph pell: {"operation": "diophantine", "ok": true, "vars": ["x", "y"], "kind": "pell_fundamental", "solution": "DiophantineSolution(kind=\"pell_fundamental\")", "fundamen
+OK  real_roots: {"operation": "real_roots", "ok": true, "var": "x", "count": 1, "intervals": [{"lo": 1.0, "hi": 2.0, "lo_exact": "1/1", "hi_exact": "2/1"}]}
+OK  real_roots none: {"operation": "real_roots", "ok": true, "var": "x", "count": 0, "intervals": []}
+OK  diff: {"operation": "diff", "ok": true, "var": "x", "kind": "alkahest.derived_result", "schema_version": 1, "steps_schema_version": 1, "value": "((sin(x^2) * exp(x)) 
+ALL_COMPUTE_OK

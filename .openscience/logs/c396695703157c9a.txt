@@ -1,0 +1,4 @@
+validation_passed: False | engine: rust
+ - True | SS UDL (16 elems): R y M_mid vs analiticos (rel_err < 1e-6)
+ - True | C-frame cantilever P=10kN: M_base vs P·L (rel_err < 1e-6)
+ - False | equilibrium residual ok en ambos casos

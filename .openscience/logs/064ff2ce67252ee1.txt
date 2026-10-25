@@ -1,0 +1,7 @@
+exit=0
+229650 /tmp/opencode/skills_list.json
+     0 /tmp/opencode/skills_err.txt
+229650 total
+=== errores:
+=== nombres detectados:
+22 ['ai4s-agent', 'computer-use', 'customize-opencode', 'docx', 'domain-check', 'experiment-suite', 'integrity-auditor', 'large-file', 'literature-survey', 'mindmap-render', 'modal-run', 'octave-mcp', 'open-science-browser', 'paper-writer', 'pdf', 'pptx', 'publication-figures', 'remote-compute', 'research-explorer', 'stats-integrity', 'traceability-review', 'xlsx']

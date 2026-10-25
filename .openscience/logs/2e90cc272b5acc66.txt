@@ -1,0 +1,38 @@
+All checks passed!
+Cross-check multi-motor (maxima/sagebrush/lispium/cadabra2 vs sympy)
+    OK   deriv-maxima: d/dx sin(x^2)e^x = 2*x*exp(x)*cos(x**2) + exp(x)*sin(x**2)
+    OK   deriv-sagebrush: d/dx sin(x^2)e^x = 2*x*exp(x)*cos(x**2) + exp(x)*sin(x**2)
+    OK   deriv-lispium: d/dx sin(x^2)e^x = 2*x*exp(x)*cos(x**2) + exp(x)*sin(x**2)
+    OK   int-maxima: int_0^inf x^2 e^-x = 2
+    OK   int-sagebrush: int_0^inf x^2 e^-x = 2
+    OK   factor-maxima: factor(x^4-1) = (x - 1)*(x + 1)*(x**2 + 1)
+    OK   factor-sagebrush: factor(x^4-1) = (x - 1)*(x + 1)*(x**2 + 1)
+    OK   sistema-maxima: x=2, y=1 -> [[x = 2,y = 1]]
+    OK   sistema-sagebrush: x=2, y=1 -> [[x == 2, y == 1]]
+    OK   gcd-maxima: gcd(462,1071) = 21
+    OK   gcd-sagebrush: gcd(462,1071) = 21
+    OK   gcd-lispium: gcd(462,1071) = 21
+    OK   limit-maxima: limit = E
+    OK   limit-sagebrush: limit = E
+    OK   primo-maxima: primep(2^61-1) = true (oracle True)
+    OK   primo-sagebrush: is_prime(2^61-1) = True (oracle True)
+    OK   bigint-maxima: 2^61-1 = 2305843009213693951
+    OK   bigint-sagebrush: 2^61-1 = 2305843009213693951
+    OK   bigint-cadabra2: 2^61-1 = 2305843009213693951
+    OK   ident-maxima: radcan = 0
+    OK   ident-sagebrush: full_simplify = 0
+    OK   ident-cadabra2: evaluate = 0
+    OK   det-maxima: det = -2
+    OK   det-sagebrush: det = -2
+    OK   totient-sagebrush: euler_phi(100) = 40
+    OK   fact-maxima: 20! = 2432902008176640000
+    OK   fact-sagebrush: 20! = 2432902008176640000
+    OK   basel-sagebrush: sum = pi**2/6
+    OK   pin-maxima-noun-eulerphi: ok=True con forma noun sin evaluar ('eulerphi(100)'): ok solo NO es exito
+    OK   pin-maxima-noun-sum: ok=True con 'sum(...) sin evaluar: revisar siempre el valor
+    OK   pin-lispium-float-bigint: (^ 2 61) -> 2.305843009213694e18: degrada enteros grandes a float
+    OK   pin-lispium-float-factorial: (factorial 20) -> 2.43290200817664e18: 20! exacto en otros motores
+    OK   pin-lispium-eco-simplify: simplify devuelve (+ (^ (+ x 1) 2) (- (^ x 2)) (* -2 x) -1) (potencias sin reducir): no evalua identidades simbolicas
+    OK   pin-sage-var-no-inyecta: var('qq ww') no inyecta en globals ('False'): usar x, y = var('x y')
+    ----
+    34/34 PASS

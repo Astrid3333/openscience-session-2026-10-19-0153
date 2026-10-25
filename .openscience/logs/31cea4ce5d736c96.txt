@@ -1,0 +1,23 @@
+total tools: 363
+- run_octave | props: ['code']
+  desc: Ejecuta codigo GNU Octave
+- octave_run | props: ['code', 'timeout', 'mode']
+  desc: Ejecuta codigo Octave. timeout en segundos (default 60).
+- octave_eval_expr | props: ['expression', 'timeout', 'mode']
+  desc: Evalua una expresion Octave con disp().
+- octave_run_script | props: ['script_path', 'timeout', 'mode']
+  desc: Ejecuta un script .m existente en disco.
+- octave_version | props: ['mode']
+  desc: Devuelve la version de Octave instalada.
+- octave_math_tool | props: ['mode', 'params']
+  desc: Cálculos matemáticos profesionales con Octave 11 (SI/Newton no aplica aquí; puro math). integrate (quadgk), differentiate (diff), ode (ode45/ode15s), 
+- octave_syntax | props: ['mode', 'code', 'timeout']
+  desc: Valida la sintaxis de un fragmento de codigo Octave sin ejecutarlo (envuelve el codigo en una funcion y lo parsea via source(), sin correr ninguna lin
+- octave_grammar_tool | props: ['mode', 'code', 'path', 'use_real_check', 'timeout']
+  desc: Cierra el ciclo validacion->generacion corregida para codigo Octave: compile_grammar devuelve la gramatica GBNF del subconjunto de Octave soportado; v
+- octave_innovation_doc_tool | props: ['mode', 'text', 'path', 'check_syntax', 'view']
+  desc: Sistema de 'contrato de innovacion' para documentos Octave (.m): un schema de campos obligatorios (PROBLEMA, SOLUCION_INNOVADORA, IMPACTO_ESPERADO, TO
+- ancestral_octave | props: ['mode', 'preset', 'params', 'extra_octave']
+  desc: Corre metodos de calculo ancestral (suanpan, TCR, vedico, pi de Arquimedes, quipu, Ifa binario, etak/navegacion, series de Madhava) como funciones Oct
+- octave_codegen_tool | props: ['mode', 'tool_name', 'modes', 'description', 'code', 'path']
+  desc: Cierra el ciclo generacion->validacion->escritura para tools NUEVAS de octave-mcp. check_collision escanea tools/ buscando choques de nombre de modulo

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+  File "/home/astrid/octave-mcp/.venv/lib/python3.12/site-packages/alkahest/__init__.py", line 860, in from_rows
+    return _NativeMatrix.from_rows(_coerce_matrix_rows(rows))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Matrix.from_rows could not determine an ExprPool: at least one entry must be an Expr or DerivedResult (bare int/float entries are coerced into that pool, but the pool cannot be inferred from numbers alone)

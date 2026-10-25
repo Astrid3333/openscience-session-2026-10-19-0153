@@ -1,0 +1,39 @@
+EXIT=1
+RESUMEN
+======================================================================
+  Total tools registradas:        365
+  Con modo validate (evaluadas):  347
+  PASSED:                         339
+  FAILED:                         2
+  ERROR:                          6
+  SKIPPED (sin modo validate):    18
+---
+--- TOOLS CON VALIDACION FALLIDA ---
+
+  [FAILED] fem_electromagnetic_tool
+      - check fallido: {"name": "poisson_2d_corre_sin_error", "passed": false, "detail": "binario no encontrado en /home/astrid/octave-mcp/submotors/fem_poisson2d/target/release/fem_poisson2d. Correr 'cargo build --release' en submotors/fem_poisson2d/ primero."}
+
+  [FAILED] attractor_trajectory
+      - check fallido: {"name": "efecto mariposa: distancia final (t=30) >> 1e-8 inicial (umbral d > 1.0)", "passed": false, "got": {"d_final": 0.1795}}
+
+--- TOOLS CON ERROR ---
+
+  [ERROR] bem_electromagnetic_tool
+      formato de respuesta inesperado: Expecting value: line 1 column 1 (char 0)
+
+  [ERROR] frame_analysis_tool
+      respuesta valida pero sin campo 'validation_passed'
+
+  [ERROR] numeral_systems_embedding
+      formato de respuesta inesperado: Expecting value: line 1 column 1 (char 0)
+
+  [ERROR] cfd_tool
+      formato de respuesta inesperado: Expecting value: line 1 column 1 (char 0)
+
+  [ERROR] dft_tool
+      formato de respuesta inesperado: Expecting value: line 1 column 1 (char 0)
+
+  [ERROR] compute_hilbert_transform
+      formato de respuesta inesperado: Expecting value: line 1 column 1 (char 0)
+
+--- TOOLS SKIPPED (18) ---

@@ -1,0 +1,9 @@
+"x, y = var('x y')\nprint(solve([x+y==3, x-y==1], [x" -> [[x == 2, y == 1]]
+"n = var('n')\nprint(limit((1+1/n)^n, n, oo))" -> e
+"k = var('k')\nprint(sum(1/k^2, (k, 1, oo)))" -> Traceback (most recent call last):
+  File "<cell>", line 2, in <module>
+TypeError: 'Expression' object is not iterable
+"x = var('x')\nprint(diff(sin(x^2)*exp(x), x))" -> 2*x*cos(x^2)*e^x + e^x*sin(x^2)
+'print(gcd(462, 1071))\nprint(is_prime(2^61-1))\nprin' -> 21
+True
+40

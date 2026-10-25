@@ -1,0 +1,22 @@
+tree delta:
+{\prod}
+  1:{\delta}
+  2:  _{m}
+  3:  _{n}
+  4:{A}
+  5:  ^{m}
+
+tree KD:
+{\prod}
+  1:{KroneckerDelta}
+  2:  {m}
+  3:  {n}
+  4:{A}
+  5:  ^{m}
+
+node: ExNode 'δ_{m n} A^{m}'
+node: ExNode 'δ_{m n}'
+node: ExNode 'm'
+node: ExNode 'n'
+node: ExNode 'A^{m}'
+node: ExNode 'm'

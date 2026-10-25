@@ -1,0 +1,4 @@
+tools/list count: 3
+
+con handler en registry (invocables via meta call_tool): 0
+SIN handler (solo cadena legacy -> 'no encontrada' via meta): 0

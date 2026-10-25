@@ -1,0 +1,11 @@
+SortOrder comma OK
+NonCommuting comma OK
+fermion: ψ_{1} ψ_{2} + ψ_{2} ψ_{1}
+kron canon: KroneckerDelta(m , n) A_{m}
+distribute prod: x y + x z
+expand prod    : x (y + z)
+expand power   : (x + y)**2
+Ex ')' -> NO ERR, str: ''
+Ex 'x +' -> NO ERR, str: 'x'
+Ex '\\frac{1}{' -> NO ERR, str: '1'
+Ex '}{' -> NO ERR, str: ''

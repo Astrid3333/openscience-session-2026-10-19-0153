@@ -1,0 +1,2 @@
+COMPILE-OK
+OK: no se escribio skill_content.py en los fallos

@@ -1,0 +1,7 @@
+A closed rational interval `[lo, hi]` isolating exactly one real root.
+
+For an exact rational root `r`, ``lo == hi == r``.
+methods: ['hi', 'hi_exact', 'lo', 'lo_exact']
+iv RootInterval(-2, -1) lo_exact: ('-2', '1') hi_exact: ('-1', '1')
+iv RootInterval(1, 2) lo_exact: ('1', '1') hi_exact: ('2', '1')
+s.value type: Expr 1

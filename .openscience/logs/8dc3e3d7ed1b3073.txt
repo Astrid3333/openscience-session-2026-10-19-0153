@@ -1,0 +1,17 @@
+validate: True | 8 checks | engine=Maxima 5.46.0 | failed=0
+   maxima_integrate_x2: 8/3
+   maxima_integrate_cos: 0
+   maxima_diff_numeric: f'(1)=5.224743167010613 vs ref=5.224743167011
+   maxima_solve_quadratic: [x = 3,x = 2]
+   maxima_factor_2_64_minus_1: 3*5*17*257*641*65537*6700417
+   maxima_limit_sin_over_x: 1
+   maxima_taylor_exp: 1+x+x^2/2+x^3/6+x^4/24+x^5/120
+   maxima_error_fence: ok=False, error=expt: undefined: 0 to a negative exponent. print("<<R>
+OK  eval integrate: {"operation": "eval", "ok": true, "engine": "Maxima 5.46.0", "input": "integrate(x^2*exp(x), x)", "result": "(x^2-2*x+2)*%e^x"}
+OK  eval diff: {"operation": "eval", "ok": true, "engine": "Maxima 5.46.0", "input": "diff(x^3*sin(x), x)", "result": "3*x^2*sin(x)+x^3*cos(x)"}
+OK  eval solve 2var: {"operation": "eval", "ok": true, "engine": "Maxima 5.46.0", "input": "solve([x+y-2, x^2+y^2-5], [x, y])", "result": "[[x = -(sqrt(6)-2)/2,y = (sqrt(6)+2)/2],\n [x = (sqrt(6)+2)/2,y = -(sqrt(6)-2)/2]]
+OK  eval error 1/0: {"operation": "eval", "ok": false, "engine": "Maxima 5.46.0", "input": "1/0", "error": "expt: undefined: 0 to a negative exponent. print(\"<<R>>\") <<R>>", "raw": "display2d:false\nfalse\nr:errcatch(1
+OK  eval syntax err: {"operation": "eval", "ok": false, "engine": "Maxima 5.46.0", "input": "integrate(x^2, x", "error": "incorrect syntax: Missing )", "raw": "display2d:false\nfalse\nincorrect syntax: Missing )\nh(integr
+OK  eval unknown fn: {"operation": "eval", "ok": true, "engine": "Maxima 5.46.0", "input": "sumthatdoesnotexist(x)", "result": "sumthatdoesnotexist(x)"}
+OK  batch: {"operation": "batch", "ok": true, "engine": "Maxima 5.46.0", "returncode": 0, "stdout": "display2d:false\nfalse\nfactor(2^32-1)"}
+OK  batch syntax err: {"operation": "batch", "ok": false, "engine": "Maxima 5.46.0", "returncode": 0, "stdout": "display2d:false\nfalse\nMaxima encountered a Lisp error:\n\n SIMPLE-ERROR: parser: end of file while scanning

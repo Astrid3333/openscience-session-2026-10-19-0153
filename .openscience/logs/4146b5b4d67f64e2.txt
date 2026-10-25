@@ -1,0 +1,158 @@
+=== /home/astrid/.config/opencode/opencode.json
+{
+ "$schema": "https://opencode.ai/config.json",
+ "model": "opencode/big-pickle",
+ "skills": {
+  "paths": [
+   "/home/astrid/Documents/OpenScience/sessions/2026-10-15-1617/bend-mcp/skills"
+  ]
+ },
+ "agents": {
+  "coder": {
+   "reasoningEffort": "low"
+  }
+ },
+ "plugin": [],
+ "mcp": {
+  "octave": {
+   "type": "local",
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "cd /home/astrid/octave-mcp && exec .venv/bin/python server.py"
+   ],
+   "enabled": true
+  },
+  "freecad": {
+   "type": "local",
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "cd /home/astrid/mcp-free-cad- && exec python3 freecad_mcp_server.py"
+   ],
+   "enabled": true
+  },
+  "blender": {
+   "type": "local",
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "cd /home/astrid/mcp-blender && exec .venv/bin/mcp-blender"
+   ],
+   "enabled": true
+  },
+  "unreal": {
+   "type": "local",
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "cd /home/astrid/unreal-mcp/Python && exec .venv/bin/python unreal_mcp_server.py"
+   ],
+   "enabled": true
+  },
+  "unity": {
+   "type": "local",
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "cd '/home/astrid/mcp-unity/Server~' && exec node build/index.js"
+   ],
+   "enabled": true
+  },
+  "bend": {
+   "type": "local",
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "exec /home/astrid/Documents/OpenScience/sessions/2026-10-15-1617/bend-mcp/.venv/bin/bend-mcp"
+   ],
+   "enabled": true
+  }
+ }
+}
+=== /home/astrid/.local/share/com.ai4s.workbench/runtime/xdg-config/opencode/opencode.json
+{
+ "$schema": "https://opencode.ai/config.json",
+ "agent": {
+  "build": {
+   "model": "opencode/exo-free",
+   "variant": "high"
+  },
+  "explore": {
+   "model": "opencode/mimo-v2.6-flash-free"
+  },
+  "summary": {
+   "model": "opencode/nemotron-3.5-lightning-free"
+  }
+ },
+ "compaction": {
+  "auto": true
+ },
+ "instructions": [
+  "/home/astrid/.local/share/com.ai4s.workbench/runtime/xdg-config/opencode/MEMORY.md",
+  "AGENTS.md"
+ ],
+ "mcp": {
+  "blender": {
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "cd /home/astrid/mcp-blender && exec .venv/bin/mcp-blender"
+   ],
+   "enabled": true,
+   "type": "local"
+  },
+  "freecad": {
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "cd /home/astrid/mcp-free-cad- && exec python3 freecad_mcp_server.py"
+   ],
+   "enabled": true,
+   "type": "local"
+  },
+  "octave": {
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "cd /home/astrid/octave-mcp && exec .venv/bin/python server.py"
+   ],
+   "enabled": true,
+   "type": "local"
+  },
+  "unity": {
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "cd '/home/astrid/mcp-unity/Server~' && exec node build/index.js"
+   ],
+   "enabled": true,
+   "type": "local"
+  },
+  "unreal": {
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "cd /home/astrid/unreal-mcp/Python && exec .venv/bin/python unreal_mcp_server.py"
+   ],
+   "enabled": true,
+   "type": "local"
+  },
+  "bend": {
+   "type": "local",
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "exec /home/astrid/Documents/OpenScience/sessions/2026-10-15-1617/bend-mcp/.venv/bin/bend-mcp"
+   ],
+   "enabled": true
+  },
+  "bend2": {
+   "type": "local",
+   "command": [
+    "/bin/bash",
+    "-lc",
+    "export BEND_MCP_BEND_BIN=$HOME/.bend/bin/bend; exec /home/astrid/Documents/OpenScience/sessions/2026-10-15-1617/bend-mcp/.venv/bin/bend-mcp"
+   ],
+   "enabled": true
+  

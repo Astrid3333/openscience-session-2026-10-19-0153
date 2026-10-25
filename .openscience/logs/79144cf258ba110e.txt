@@ -1,0 +1,4 @@
+len(TOOLS)= 364 unique= 362
+dups: {'run_math_pipeline': 2, 'numeral_systems_embedding': 2}
+len(TOOLS_INDEX)= 364
+registry size: 357

@@ -1,0 +1,103 @@
+regenerado /home/astrid/octave-mcp/skills/octave-mcp/skill_content.py (19375 bytes) desde SKILL.md
+[migracion-mcp-octave-real 8e7e9d7] docs: pre-push hook local con el guard (suite + batería) documentado
+ 2 files changed, 8 insertions(+)
+pre-push: guarded validations (suite + batería, ~4 min)...
+Consultando tools/list en server.py ...
+Total de tools registradas: 371
+(incluye 3 alias deprecados: ethnomath_comparative_tool, ethnomath_hybrid_tool, ethnomath2)
+
+Tools con modo 'validate' detectado: 353
+Tools sin modo 'validate' (SKIPPED): 18
+
+Ejecutando validaciones en paralelo (4 workers, cada uno un subprocess de server.py con su subset de tools)...
+AVISO: 4 chunk(s) escribieron a stderr -- correr con PARALLEL_WORKERS=1 --verbose si algo da ERROR para aislar cual chunk fue.
+Listo en 160.1s.
+
+======================================================================
+RESUMEN
+======================================================================
+  Total tools registradas:        371
+  Con modo validate (evaluadas):  353
+  PASSED:                         353
+  FAILED:                         0
+  ERROR:                          0
+  SKIPPED (sin modo validate):    18
+======================================================================
+
+--- TOOLS SKIPPED (18) ---
+  (usar --verbose para ver la lista completa con motivos)
+
+RESULTADO FINAL: todas las tools con modo validate pasaron OK.
+
+GUARD: OK -- 353/353 PASSED, 0 FAILED, 0 ERROR.
+Cross-check multi-motor (maxima/sagebrush/lispium/cadabra2/alkahest vs sympy)
+    OK   deriv-maxima: d/dx sin(x^2)e^x = 2*x*exp(x)*cos(x**2) + exp(x)*sin(x**2)
+    OK   deriv-sagebrush: d/dx sin(x^2)e^x = 2*x*exp(x)*cos(x**2) + exp(x)*sin(x**2)
+    OK   deriv-lispium: d/dx sin(x^2)e^x = 2*x*exp(x)*cos(x**2) + exp(x)*sin(x**2)
+    OK   int-maxima: int_0^inf x^2 e^-x = 2
+    OK   int-sagebrush: int_0^inf x^2 e^-x = 2
+    OK   factor-maxima: factor(x^4-1) = (x - 1)*(x + 1)*(x**2 + 1)
+    OK   factor-sagebrush: factor(x^4-1) = (x - 1)*(x + 1)*(x**2 + 1)
+    OK   sistema-maxima: x=2, y=1 -> [[x = 2,y = 1]]
+    OK   sistema-sagebrush: x=2, y=1 -> [[x == 2, y == 1]]
+    OK   gcd-maxima: gcd(462,1071) = 21
+    OK   gcd-sagebrush: gcd(462,1071) = 21
+    OK   gcd-lispium: gcd(462,1071) = 21
+    OK   limit-maxima: limit = E
+    OK   limit-sagebrush: limit = E
+    OK   primo-maxima: primep(2^61-1) = true (oracle True)
+    OK   primo-sagebrush: is_prime(2^61-1) = True (oracle True)
+    OK   bigint-maxima: 2^61-1 = 2305843009213693951
+    OK   bigint-sagebrush: 2^61-1 = 2305843009213693951
+    OK   bigint-cadabra2: 2^61-1 = 2305843009213693951
+    OK   ident-maxima: radcan = 0
+    OK   ident-sagebrush: full_simplify = 0
+    OK   ident-cadabra2: evaluate = 0
+    OK   det-maxima: det = -2
+    OK   det-sagebrush: det = -2
+    OK   totient-sagebrush: euler_phi(100) = 40
+    OK   fact-maxima: 20! = 2432902008176640000
+    OK   fact-sagebrush: 20! = 2432902008176640000
+    OK   basel-sagebrush: sum = pi**2/6
+    OK   deriv-alkahest: d/dx sin(x^2)e^x = 2*x*exp(x)*cos(x**2) + exp(x)*sin(x**2)
+    OK   int-alkahest: int_0^inf x^2 e^-x = 2
+    OK   limit-alkahest: limit = E
+    OK   basel-alkahest: sum k^-2 = pi**2/6
+    OK   sistema-alkahest: x=2, y=1 -> [{'x': '2', 'y': '1'}]
+    OK   det-alkahest: det = -2
+    OK   totient-alkahest: totient(100) = 40
+    OK   primo-alkahest: isprime(2^61-1) = True (oracle True)
+    OK   factorint-alkahest: factorint(462) = {2: 1, 3: 1, 7: 1, 11: 1}
+    OK   ode2-maxima: y'+y=0 -> C1*exp(-x) (residuo 0; oráculo C1*exp(-x))
+    OK   ode2-ic-maxima: y(0)=1 -> exp(-x) (residuo 0, y(0)=1)
+    OK   ode2-forzada-maxima: y'-2y=e^x -> (C1 - exp(-x))*exp(2*x) (residuo 0)
+    OK   ode2-2o-maxima: y''+y=0 -> K1*sin(x) + K2*cos(x) (residuo 0)
+    OK   ode2-2o-ic-maxima: y(0)=1, y'(0)=0 -> cos(x) (residuo 0, y(0)=1, y'(0)=0)
+    OK   laplace-sin-maxima: L{sin t} = 1/(s**2 + 1)
+    OK   laplace-te-at-maxima: L{t e^{at}} = (-a + s)**(-2)
+    OK   ilt-sin-maxima: L^-1{1/(s^2+1)} = sin(t)
+    OK   ilt-cos-maxima: L^-1{s/(s^2+1)} = cos(t)
+    OK   desolve-sagebrush: y'=-y -> _C*exp(-t) (residuo 0)
+    OK   desolve-ic-sagebrush: y(0)=1 -> exp(-t) (residuo 0, y(0)=1)
+    OK   desolve-forzada-sagebrush: y'-2y=e^t -> (_C - exp(-t))*exp(2*t) (residuo 0)
+    OK   desolve-2o-sagebrush: y''+y=0 -> _K1*sin(t) + _K2*cos(t) (residuo 0)
+    OK   rk4-sagebrush: y'=x+y, h=0.5 -> 3 puntos, err máx 0.00187 vs 2e^x-x-1
+    OK   router-laplace: field=laplace -> maxima/field-laplace, L{sin t} = 1/(s**2 + 1)
+    OK   router-ode: field=ode -> maxima/field-ode, y'+y=0 -> C1*exp(-x) (residuo 0)
+    OK   pin-maxima-noun-eulerphi: ok=True con forma noun sin evaluar ('eulerphi(100)'): ok solo NO es exito
+    OK   pin-maxima-noun-sum: ok=True con 'sum(...) sin evaluar: revisar siempre el valor
+    OK   pin-lispium-float-bigint: (^ 2 61) -> 2.305843009213694e18: degrada enteros grandes a float
+    OK   pin-lispium-float-factorial: (factorial 20) -> 2.43290200817664e18: 20! exacto en otros motores
+    OK   pin-lispium-eco-simplify: simplify devuelve (+ (^ (+ x 1) 2) (- (^ x 2)) (* -2 x) -1) (potencias sin reducir): no evalua identidades simbolicas
+    OK   pin-sage-var-no-inyecta: var('qq ww') no inyecta en globals ('False'): usar x, y = var('x y')
+    OK   pin-alkahest-basel-forma: sum 1/k^2 -> PySumError E-SUM-002 (texto plano, sin ok): Basel exige la forma k^(-2)
+    OK   pin-sage-function-aplica: function('y', t) devuelve el closure SIN aplicar (TypeError al sumar): usar function('y')(t)
+    OK   pin-maxima-ode2-false: ode2 sin ' en diff -> ok=True con 'false': la derivada debe ir cotada ('diff(...)), y ok True no es exito
+    OK   pin-maxima-ilt-orden: ilt con el orden de laplace (f,t,s) -> ok=True con delta(s)/(s^2+1): ilt va (f,s,t), y ok True no es exito
+    ----
+    63/63 PASS
+
+GUARD: OK bateria cross-check 63/63 PASS.
+pre-push: OK — suite + batería en verde.
+To github.com:Astrid3333/octave-mcp.git
+   2d73b38..8e7e9d7  migracion-mcp-octave-real -> migracion-mcp-octave-real

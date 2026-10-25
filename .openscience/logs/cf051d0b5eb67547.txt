@@ -1,0 +1,13 @@
+import 0.02s  Session() 0.09s
+factor: 3 * 5 * 17 * 257 * 641 * 65537 * 6700417
+ err: None
+nf: 3
+ err: None
+set: None None
+persist: 42
+ None
+python: 1024
+ None
+errpath: {'stdout': '', 'result': None, 'error': 'Traceback (most recent call last):\n  File "<cell>", line 1, in <module>\nZeroDivisionError: rational division by zero'}
+version: 0.7.2
+keys of run result: ['displays', 'error', 'restarted', 'result', 'seconds', 'stdout']

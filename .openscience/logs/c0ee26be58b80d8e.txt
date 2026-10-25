@@ -1,0 +1,17 @@
+16:    "octave": {
+17-      "type": "local",
+18-      "command": [
+19-        "/bin/bash",
+20-        "-lc",
+21-        "cd /home/astrid/octave-mcp && exec .venv/bin/python server.py"
+22-      ],
+23-      "enabled": true
+24-    },
+25-    "freecad": {
+26-      "type": "local",
+27-      "command": [
+28-        "/bin/bash",
+=== config keys:
+['$schema', 'model', 'skills', 'agents', 'plugin', 'mcp']
+=== project-level opencode config:
+drwxrwxr-x  3 astrid astrid 4096 Oct 21 02:25 .openscience

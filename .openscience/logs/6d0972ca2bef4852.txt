@@ -1,0 +1,9 @@
+TOOLS catalog: 362
+SIN handler (inalcanzables via call_tool): 7
+   - numeral_systems_embedding
+   - octave_eval_expr
+   - octave_run
+   - octave_run_script
+   - octave_version
+   - run_math_pipeline
+   - run_octave

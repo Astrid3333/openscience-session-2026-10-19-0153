@@ -1,0 +1,5 @@
+simplify cell: 'DerivedResult(value=1)' <class 'builtins.DerivedResult'>
+fund item: Expr '3'
+float? ERR float() argument must be a string or a real number, not 'builtins.Expr'
+lo_exact(): tuple ('1', '1')
+  tuple content: [('str', '1'), ('str', '1')]

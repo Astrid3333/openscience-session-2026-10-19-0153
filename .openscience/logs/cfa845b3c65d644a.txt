@@ -1,0 +1,5 @@
+2 antisym swap: -A_{m n}
+3 comm derivatives: \partial_{x}(f) \partial_{y}(f)-\partial_{x}(f) \partial_{y}(f)
+Traceback (most recent call last):
+  File "<stdin>", line 13, in <module>
+RuntimeError: Metric: indices of a metric object must have been declared as Indices.

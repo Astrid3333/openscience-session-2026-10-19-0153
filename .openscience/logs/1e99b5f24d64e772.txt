@@ -1,0 +1,11 @@
+=== submotors
+  FALTA bem_electromagnetic  (target: )
+  FALTA cfd_cavity  (target: )
+  FALTA fem_poisson2d  (target: )
+=== venvs
+.venv
+=== cargo:
+/home/astrid/.cargo/bin/cargo
+=== octave signal pkg:
+no packages installed.
+

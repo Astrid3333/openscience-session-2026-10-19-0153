@@ -1,0 +1,20 @@
+validation_passed: False | engine: alkahest 3.12.0
+  [OK ] diff_analytic_vs_numeric: got=max_err=0.000e+00
+  [OK ] integrate_definite_x2: got=value=8/3, eval=2.6666666666666665
+  [OK ] integrate_definite_cos: got=eval=1.7432001987807748
+  [OK ] simplify_rational: got=max_err=0.000e+00
+  [OK ] limit_sin_over_x: got=1
+  [OK ] series_exp_truncation: got=max_err=1.110e-16, O(x^6)=True
+  [OK ] solve_quadratic_roots: got=roots=[-2.0, 2.0]
+  [OK ] solve_system_residuals: got=solutions=2, max_residual=0.000e+00
+  [OK ] sum_definite_k2: got=max_err=5.684e-14
+  [FAIL] sum_indefinite_k: got=sum@k=7=21.0
+  [OK ] nt_isprime: got={'2**61-1': True, '2**32-1': False, '15485863': True}
+  [OK ] nt_factorint: got={'3': 1, '5': 1, '17': 1, '257': 1, '65537': 1}
+  [OK ] nt_totient_nextprime: got={'totient(97)': 96, 'nextprime(100)': 101}
+  [OK ] derived_result_contract: got=steps=6, bytes=1212
+  [FAIL] certificate_lean_export: 'builtins.DerivedResult' object has no attribute 'has_certificate'
+{"operation": "diff", "ok": true, "var": "x", "kind": "alkahest.derived_result", "schema_version": 1, "steps_schema_version": 1, "value": "((sin(x^2) * exp(x)) + (x * 2 * exp(x) * cos(x^2)))", "verification": {"status": "unverified", "evidence": "none", "externally_verified": false, "artifact_format
+{'operation': 'solve', 'ok': True, 'count': 2, 'solutions': [{'x': '(2 + (-1/2 * (2 + sqrt(6))))', 'y': '((2 + sqrt(6)) * 1/2)'}, {'x': '(2 + (-1/2 * (2 + (-1 * sqrt(6)))))', 'y': '(1/2 * (2 + (-1 * sqrt(6))))'}], 'vars': ['x', 'y'], 'method': 'groebner'}
+((1 + n) * (1/6 + (-1/2 * (1 + n)) + (1/3 * (1 + n)^2)))
+{'operation': 'factorint', 'ok': True, '3': 1, '5': 1, '17': 1, '257': 1, '65537': 1}

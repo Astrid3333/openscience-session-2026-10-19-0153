@@ -1,0 +1,14 @@
+diff (expr, var)
+integrate (expr, var, a=None, b=None)
+simplify (expr, assumptions=None)
+limit (expr, var, point, dir=None)
+series (expr, var, point, order)
+solve (equations, vars, *, numeric=False, method='groebner', domain=None, assumptions=None)
+sum_definite (expr, k, lo, hi)
+sum_indefinite (expr, k)
+compile_expr (expr, inputs, expected_evals=None)
+to_lean (arg)
+factor_univariate_mod_p (coeffs, modulus)
+A: sum_definite() missing 1 required positional argument: 'hi'
+sum_def expr,k,lo,hi: DerivedResult(value=((n + 1) * (1/6 + (-1/2 * (n + 1)) + (1/3 * (n + 1)^2))))
+compiled at 3.5: 4.5

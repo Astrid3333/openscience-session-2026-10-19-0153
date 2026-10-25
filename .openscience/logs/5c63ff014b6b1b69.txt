@@ -1,0 +1,7 @@
+Matrix sig: (self, /, *args, **kwargs)
+Matrix methods: ['characteristic_polynomial_lambda_minus_m', 'cholesky', 'cols', 'column_space', 'det', 'diagonalize', 'eigenvals', 'eigenvects', 'from_rows', 'get', 'hadamard', 'inverse', 'jordan_form', 'lu', 'matrix_exp', 'minimal_polynomial', 'multiply', 'nullspace', 'qr', 'rank', 'rational_canonical_form', 'row_space', 'rows', 'rref', 'scalar_mul', 'shape', 'simplify', 'to_list', 'trace', 'transpose']
+jacobian sig: (f_vec, x_vec)
+diophantine sig: (equation, vars)
+cad fns: ['CadError', 'RealRootError', 'RootInterval', '_solution_is_real', 'cad_lift', 'cad_project', 'plot_roots', 'real_roots', 'refine_root', 'verified_no_roots']
+real_roots (poly, var)
+decide (formula)

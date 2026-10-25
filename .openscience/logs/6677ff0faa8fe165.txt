@@ -1,0 +1,18 @@
+eigenvals key types: [('Expr', '1'), ('Expr', '3')] | mult types: ['int', 'int']
+eigenvects: list [(1, 1, [[[-1], [1]]]), (3, 1, [[[-1], [-1]]])]
+rref: Matrix [[1, 0], [0, 1]]
+  kind: str = parametric_linear
+  fundamental: NoneType = None
+  parameter: Expr = _t
+  parametric: list = [(2 + (5 * _t)), (-1 + (-1 * 3 * _t))]
+  points: NoneType = None
+  pell_d: NoneType = None
+  pell kind: str = pell_fundamental
+  pell points: NoneType = None
+  pell fundamental: tuple = (3, 2)
+  pell pell_d: Expr = 2
+  pell pell_particular: NoneType = None
+  iv lo: float = -2.0
+  iv hi: float = -1.0
+  iv lo_exact: builtin_function_or_method = <built-in method lo_exact of alkahest.RootInterval object at 0x76615279eb50>
+  iv hi_exact: builtin_function_or_method = <built-in method hi_exact of alkahest.RootInterval object at 0x76615279eb50>

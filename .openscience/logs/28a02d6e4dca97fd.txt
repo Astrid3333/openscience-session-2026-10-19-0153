@@ -1,0 +1,3 @@
+after canonicalise: δ^{m}_{n} A_{m}
+after reduce_delta: δ^{m}_{n} A_{m}
+eliminate_kronecker: δ_{m n} A^{m}

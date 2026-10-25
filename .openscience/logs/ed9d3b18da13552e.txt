@@ -1,0 +1,35 @@
+/home/astrid/.config/opencode/:
+total 16
+drwxrwxr-x  2 astrid astrid 4096 Oct  5 01:40 .
+drwxr-xr-x 53 astrid astrid 4096 Oct 11 19:42 ..
+-rw-rw-r--  1 astrid astrid   63 Oct  5 01:40 .gitignore
+-rw-rw-r--  1 astrid astrid 1587 Oct 16 01:43 opencode.json
+
+/home/astrid/.local/share/com.ai4s.workbench/runtime/xdg-config/opencode/:
+total 1772
+drwxrwxr-x  8 astrid astrid    4096 Oct 16 14:24 .
+drwxrwxr-x 15 astrid astrid    4096 Oct 21 02:42 ..
+drwxrwxr-x  2 astrid astrid    4096 Oct  5 00:40 agent
+-rw-r--r--  1 astrid astrid    2228 Oct 21 01:08 browser-guard.ts
+drwxrwxr-x  2 astrid astrid    4096 Oct  5 00:40 command
+drwxrwxr-x  2 astrid astrid    4096 Oct  5 00:40 computer
+-rw-rw-r--  1 astrid astrid      63 Oct  5 00:40 .gitignore
+-rw-r--r--  1 astrid astrid 1731592 Oct 21 01:08 goal-plugin.server.js
+-rw-r--r--  1 astrid astrid    5489 Oct 21 01:08 history-guard.ts
+drwxrwxr-x 25 astrid astrid    4096 Oct  5 00:40 node_modules
+-rw-------  1 astrid astrid    2431 Oct 16 14:38 opencode.json
+-rw-------  1 astrid astrid    1917 Oct 16 14:24 opencode.json.bak-2026-10-16
+-rw-rw-r--  1 astrid astrid       8 Oct  5 00:40 .opencode-plugin-version
+-rw-r--r--  1 astrid astrid     266 Oct  5 00:40 package.json
+-rw-r--r--  1 astrid astrid   14738 Oct  5 00:40 package-lock.json
+drwxrwxr-x 23 astrid astrid    4096 Oct 21 02:36 skills
+drwxrwxr-x  2 astrid astrid    4096 Oct  5 00:40 tools
+=== XDG:
+XDG_CONFIG_HOME=/home/astrid/.local/share/com.ai4s.workbench/runtime/xdg-config
+=== opencode.json del runtime tiene skills/mcp?
+/home/astrid/.config/opencode/opencode.json
+  skills: {'paths': ['/home/astrid/Documents/OpenScience/sessions/2026-10-15-1617/bend-mcp/skills']}
+  mcp keys: ['octave', 'freecad', 'blender', 'unreal', 'unity', 'bend']
+/home/astrid/.local/share/com.ai4s.workbench/runtime/xdg-config/opencode/opencode.json
+  skills: None
+  mcp keys: ['blender', 'freecad', 'octave', 'unity', 'unreal', 'bend', 'bend2']

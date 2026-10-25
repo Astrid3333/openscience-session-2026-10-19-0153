@@ -1,0 +1,2 @@
+shim ok -> /home/astrid/octave-mcp/.venv/bin/python
+8020928 /usr/bin/python3.12

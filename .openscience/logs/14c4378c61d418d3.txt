@@ -1,0 +1,3 @@
+escrito 7423 bytes
+identico a SKILL.md: True | bytes: 5786
+name: octave-mcp | desc: Use when the user wants scientific/numeric computation served by their...

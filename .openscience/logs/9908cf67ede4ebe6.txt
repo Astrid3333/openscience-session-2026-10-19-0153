@@ -1,0 +1,16 @@
+[1] octave_math_tool transforms/laplace (prueba de necesidad)
+    FALLA como se esperaba: syms undefined (pkg symbolic ausente)
+    -> el runtime de Octave no ofrece Laplace simbolico ni inversa; maxima_eval_tool cubre el hueco
+[2] maxima_eval_tool batch: laplace(ODE) -> ICs -> solve -> ilt
+    forma cerrada y(t) = (%e^-(t/5)*((1925*sin((2*sqrt(6)*t)/5))/(241*sqrt(6))
+           +(100*cos((2*sqrt(6)*t)/5...
+    residual ratsimp(diff(yf,2)+0.4*diff(yf)+yf-sin(2t)) = 0
+    ICs [y(0), y'(0)] = [0.0, 0.0]
+    muestras float: 101 puntos en t=0:0.05:5  -> OK
+[3] octave_run ode45: solucion numerica referee
+    ode45 devuelve 101 valores en la malla
+[4] max|y_Maxima - y_ode45| sobre 101 puntos = 2.372e-10
+    PNG: /tmp/opencode/maxima_laplace_ode.png (copia en workspace: /home/astrid/Documents/OpenScience/sessions/2026-10-19-0153/maxima_laplace_ode.png)
+
+EJERCICIO COMPLETO: Maxima (laplace/ilt simbolico) -> Octave (ode45 numerico) coinciden
+  residual=0: True | ICs: [0.0, 0.0] | max err = 2.372e-10

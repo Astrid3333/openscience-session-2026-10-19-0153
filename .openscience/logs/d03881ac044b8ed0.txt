@@ -1,0 +1,5 @@
+4a canonicalise: g_{m}^{n} g_{n}^{k}
+4b lower       : g_{m n} A^{n}
+Traceback (most recent call last):
+  File "<stdin>", line 6, in <module>
+TypeError: 'cadabra2.scalar_backend_t' object is not callable

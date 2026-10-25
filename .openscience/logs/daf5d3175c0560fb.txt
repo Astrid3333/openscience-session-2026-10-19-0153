@@ -1,0 +1,9 @@
+series exp: Series Series(((1 * 1) + (x * 1) + (1/2 * x^2) + (1/6 * x^3) + (1/24 * x^4) + O(x^5)))
+solve ERR: TypeError argument 'equations': 'Expr' object cannot be converted to 'Sequence'
+sum_def ERR: TypeError sum_definite() missing 2 required positional arguments: 'lo' and 'hi'
+sum_indef: value=(k * (-1/2 + (k * 1/2))) steps=1 cert=True
+isprime(2^127-1): True
+factorint(2^32-1): {3: 1, 5: 1, 17: 1, 257: 1, 65537: 1}
+solve system: list [{x: (2 + (-1/2 * (2 + sqrt(6)))), y: (1/2 * (2 + sqrt(6)))}, {x: (2 + (-1/2 * (2 + (-1 * sqrt(6))))), y: (1/2 * (2 + (-1 * sqrt(6))))}]
+steps sample: [{'rule': 'mul_one', 'before': '(1 * -1)', 'after': '-1', 'side_conditions': []}]
+numpy_eval ERR: TypeError numpy_eval() takes a CompiledFn as its first argument, got list; compiled functions come from compile_expr(expr, args) or CompileCache.get(...)

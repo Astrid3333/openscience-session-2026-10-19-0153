@@ -2,24 +2,26 @@
 
 - Goal: maintain `/home/astrid/octave-mcp` — server auditado, suite verde,
   skill empaquetada en GitHub privado (`Astrid3333/octave-mcp`).
-- Stage: alkahest + maxima + sagebrush + lispium + cadabra2
-  (CAS de álgebra tensorial) + **cas_router_math_tool** (router
-  unificado de los 4) integradas; ejercicios demo Laplace→ODE, número
-  de clase newforms, cross-check multi-motor Lispium, cadena
-  tensorial/fermiones Cadabra2, despacho multi-CAS y batería
-  cross-check **5-CAS** (4 + alkahest) + sección ODE/Laplace vs
-  oráculo sympy (incluye ilt, ode2 2º orden con ic2, desolve_rk4
-  numérico, hints de campo del router), documentada en SKILL.md.
-- Current task: ciclo «5 adiciones en orden» cerrado — batería
-  **63/63 PASS** (+ilt×2 con pin de orden, +ode2 2º orden con
-  ic2, +desolve_rk4 vs analítica, +router laplace/ode, +pin
-  `pin-maxima-ilt-orden`); `run_validations_guarded.py` ahora usa la
-  batería como 2º gate (suite → battery → exit 0 solo si ambas);
-  router validate 10→12 checks. SKILL.md + skill_content actualizados.
-- Verification state: guard exit 0; suite 371 registradas / 353
-  evaluadas / 353 PASSED / 0 FAILED / 0 ERROR / 18 SKIPPED;
-  batería 63/63; ruff limpio en archivos tocados.
-- Known pending (pasted-7): **ninguno** — pre-push hook con el guard
-  instalado y verificado end-to-end (push `8e7e9d7` pasó con
-  353/353 + 63/63).
-- Next action: pedir al usuario qué sigue.
+- Stage: 5-CAS + router; ciclo «5 adiciones en orden» (T1–T5) CERRADO:
+  router `operation=crosscheck` (validate 15/15), `sympy_eval_tool`
+  (quinto motor, 9/9), cobertura validate **372/372 con 0 SKIPPED**,
+  fuzzing diferencial en la batería (semilla `FUZZ_SEED=20261024`,
+  12 rondas, **99/99 PASS** = 63+36, determinista) y **CI en GitHub
+  Actions** (jobs lint sobre manifiesto `ci/ruff_files.txt` + smoke
+  `ci/smoke.py` vía stdio con `requirements.txt`; ambos verificados
+  localmente exit 0). README generado con `render_readme.py` (check OK).
+- Current task: cierre — SKILL.md + skill_content regenerados
+  (check_sync True), notas del ciclo escritas; pendiente commit+push
+  del conjunto T1–T5.
+- Verification state: guard exit 0; suite **372 registradas / 372
+  evaluadas / 372 PASSED / 0 FAILED / 0 ERROR / 0 SKIPPED**; batería
+  **99/99**; ruff 0 en los 17 archivos del manifiesto (`server.py`
+  excluido, 815 errores pre-existentes no tocados); pdelta
+  `buckling_load` funcional (fix bug `N_max`), valores deterministas
+  timber/concrete/pdelta intactos.
+- CI en GitHub Actions verde y sin anotaciones (commit `78d2ff4`:
+  checkout@v7 + setup-python@v7 node24, runner fijo ubuntu-24.04);
+  README drift check también verde (venía fallando desde hace 4 pushes).
+- Known pending (pasted-7): **ninguno**.
+- Next action: pedir al usuario qué sigue (candidatos: ruff de
+  `server.py`, issue/PR, nueva funcionalidad).

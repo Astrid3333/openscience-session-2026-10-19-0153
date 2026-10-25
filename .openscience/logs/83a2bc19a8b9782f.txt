@@ -1,0 +1,8 @@
+SortOrder ERR: A list property cannot be assigned to a single object.
+NonCommuting-1 ERR: A list property cannot be assigned to a single object.
+fermion canon: ψ_{1} ψ_{2} + ψ_{2} ψ_{1}
+reduce_delta: KroneckerDelta(m , n) A_{m}
+distribute: (x + y)**2
+expand2    : x (y + z)
+bad str: '\\partial_{x}(f)'
+bad tree: '{\\partial}\n  1:_{x}\n  2:{f}\n'

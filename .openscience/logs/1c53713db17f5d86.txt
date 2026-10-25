@@ -1,0 +1,3 @@
+prop attach OK
+\delta_{m n} A^m -> δ^{m}_{n} A_{m}
+\delta_{m n} A_m -> δ_{m n} A_{m}

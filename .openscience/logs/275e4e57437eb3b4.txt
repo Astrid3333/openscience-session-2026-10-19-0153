@@ -1,0 +1,5 @@
+Indices : Failed to collect help information; no info at /home/astrid/octave-mcp/.venv/lib/python3.12/site-packages/../../../share/cadabra2/manual/properties/Indices.cnb.
+Metric : Failed to collect help information; no info at /home/astrid/octave-mcp/.venv/lib/python3.12/site-packages/../../../share/cadabra2/manual/properties/Metric.cnb.
+simplify : Failed to collect help information; no info at /home/astrid/octave-mcp/.venv/lib/python3.12/site-packages/../../../share/cadabra2/manual/algorithms/simplify.cnb.
+collect_terms : Failed to collect help information; no info at /home/astrid/octave-mcp/.venv/lib/python3.12/site-packages/../../../share/cadabra2/manual/algorithms/collect_terms.cnb.
+substitute : Failed to collect help information; no info at /home/astrid/octave-mcp/.venv/lib/python3.12/site-packages/../../../share/cadabra2/manual/algorithms/substitute.cnb.

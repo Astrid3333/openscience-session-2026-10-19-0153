@@ -1,0 +1,3 @@
+    OK   pin-maxima-ode2-false: ode2 sin ' en diff -> ok=True con 'false': la derivada debe ir cotada ('diff(...)), y ok True no es exito
+    ----
+    55/55 PASS

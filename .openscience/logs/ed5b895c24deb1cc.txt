@@ -1,0 +1,53 @@
+initialize: {'protocolVersion': '2024-11-05', 'capabilities': {'tools': {}}, 'serverInfo': {'name': 'octave-mcp', 'version': '1.2'}}
+tools/list_full: 363 tools
+alkahest_cas_tool registrada ✓  mode enum: ['compute', 'validate']
+  operations: ['diff', 'integrate', 'simplify', 'limit', 'series', 'solve', 'sum_definite', 'sum_indefinite', 'factorint', 'isprime', 'totient', 'nextprime']
+
+[1] validate -> validation_passed=True  engine=alkahest 3.12.0  checks=15
+      OK  diff_analytic_vs_numeric
+      OK  integrate_definite_x2
+      OK  integrate_definite_cos
+      OK  simplify_rational
+      OK  limit_sin_over_x
+      OK  series_exp_truncation
+      OK  solve_quadratic_roots
+      OK  solve_system_residuals
+      OK  sum_definite_k2
+      OK  sum_indefinite_k
+      OK  nt_isprime
+      OK  nt_factorint
+      OK  nt_totient_nextprime
+      OK  derived_result_contract
+      OK  certificate_lean_export
+
+[2] diff(sin(x^2)*exp(x)) ->
+      value: ((sin(x^2) * exp(x)) + (x * 2 * exp(x) * cos(x^2)))
+      steps: 6 (reglas: diff_identity, power_rule, diff_sin, diff_exp, product_rule, mul_one)
+      verification: unverified
+
+[3] ∫_0^2 x^2 dx -> value=8/3
+      certificate: 1177 chars, status=certificate_available
+      primeras lineas del Lean 4:
+        import Mathlib.Tactic
+        import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+        import Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv
+
+[4] solve {x+y=2, x^2+y^2=5} -> 2 soluciones (groebner):
+      {'x': '(2 + (-1/2 * (2 + sqrt(6))))', 'y': '((2 + sqrt(6)) * 1/2)'}
+      {'x': '(2 + (-1/2 * (2 + (-1 * sqrt(6)))))', 'y': '(1/2 * (2 + (-1 * sqrt(6))))'}
+
+[5] sum_indefinite(k^2) -> (k * (1/6 + (k * -1/2) + (k^2 * 1/3)))
+      (antidiferencia Delta F = k^2, con steps=1)
+Traceback (most recent call last):
+  File "/tmp/opencode/test_alkahest_mcp.py", line 132, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/tmp/opencode/test_alkahest_mcp.py", line 117, in main
+    r = call(8, {"mode": "compute", "operation": "factorint",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/opencode/test_alkahest_mcp.py", line 64, in call
+    resp = recv(req_id)
+           ^^^^^^^^^^^^
+  File "/tmp/opencode/test_alkahest_mcp.py", line 34, in recv
+    raise RuntimeError("server cerro stdout")
+RuntimeError: server cerro stdout

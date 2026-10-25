@@ -1,0 +1,15 @@
+\delta_{m n} A^m                 + canonicalise         -> δ^{m}_{n} A_{m}
+\delta_{m n} A^m                 + eliminate_kronecker  -> δ_{m n} A^{m}
+\delta_{m n} A^m                 + reduce_delta         -> δ_{m n} A^{m}
+\delta_{m n} A^m                 + canon+reduce      -> δ^{m}_{n} A_{m}
+
+KroneckerDelta(m, n) A^m         + canonicalise         -> KroneckerDelta(m , n) A^{m}
+KroneckerDelta(m, n) A^m         + eliminate_kronecker  -> KroneckerDelta(m , n) A^{m}
+KroneckerDelta(m, n) A^m         + reduce_delta         -> KroneckerDelta(m , n) A^{m}
+KroneckerDelta(m, n) A^m         + canon+reduce      -> KroneckerDelta(m , n) A^{m}
+
+\delta_{m n} A_m                 + canonicalise         -> δ_{m n} A_{m}
+\delta_{m n} A_m                 + eliminate_kronecker  -> δ_{m n} A_{m}
+\delta_{m n} A_m                 + reduce_delta         -> δ_{m n} A_{m}
+\delta_{m n} A_m                 + canon+reduce      -> δ_{m n} A_{m}
+

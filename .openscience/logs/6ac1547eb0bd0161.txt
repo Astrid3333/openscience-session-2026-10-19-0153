@@ -1,0 +1,3 @@
+pyscf 2.14.0 | numpy 2.5.4
+converged SCF energy = -1.11675930739643
+H2 RHF = -1.1167593073964255 Ha

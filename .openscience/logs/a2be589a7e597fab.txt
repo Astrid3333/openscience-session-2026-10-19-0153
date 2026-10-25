@@ -1,0 +1,3 @@
+validate: True 22 checks
+{"operation": "matrix", "action": "eigenvects", "ok": true, "shape": [2, 2], "eigenvects": [{"value": "1", "mult": 1, "basis": [["-1", "1"]]}, {"value": "3", "mult": 1, "basis": [["-1", "-1"]]}]}
+{"operation": "matrix", "action": "eigenvects", "ok": true, "shape": [2, 2], "eigenvects": [{"value": "x", "mult": 2, "basis": [["-1", "0"]]}]}

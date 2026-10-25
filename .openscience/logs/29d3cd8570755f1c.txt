@@ -1,0 +1,8 @@
+sympy 1.14.0
+hash-cons var same node: True x
+to_dict keys: ['certificate_status', 'has_certificate', 'kind', 'schema_version', 'steps', 'steps_schema_version', 'value', 'verification']
+json-safe to_dict: {"kind": "alkahest.derived_result", "schema_version": 1, "steps_schema_version": 1, "value": "((sin(x^2) * exp(x)) + (x * 2 * exp(x) * cos(x^2)))", "verification": {"status": "unverified", "evidence": "none", "externally_verified": false, "artifact_format": null, "side_conditions": [], "method": "de
+cert status: {'certifiable': False, 'reason': 'withheld_uncertifiable_step', 'blocking_steps': [{'index': 4, 'rule': 'product_rule', 'before': '(sin(x^2) * exp(x))', 'after': '((x * 2 * exp(x) * cos(x^2)) + (sin(x^2) * exp(x) * 1))'}]} | verification: {'status': 'unverified', 'evidence': 'none', 'externally_verified': False, 'artifact_format': None, 'side_conditions': [], 'method': 'derivation_log'}
+Series expr: ((1 * 1) + (x * 1) + (x^2 * 1/2) + (1/6 * x^3) + O(x^4)) | truncated: <built-in method truncated of builtins.Series object at 0x734131147bd0> <class 'builtin_function_or_method'>
+solve types: <class 'list'> <class 'dict'> (x, 2) <class 'builtins.Expr'>
+root eval: 2.0

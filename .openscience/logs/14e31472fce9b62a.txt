@@ -1,0 +1,34 @@
+GNU Octave (x86_64-pc-linux-gnu) version 11.3.0
+=== política apt:
+octave:
+  Installed: 11.3.0-0build1~ubuntu2404
+  Candidate: 11.3.0-0build1~ubuntu2404
+  Version table:
+ *** 11.3.0-0build1~ubuntu2404 100
+        100 /var/lib/dpkg/status
+     8.4.0-1build5 500
+        500 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages
+octave-dev:
+  Installed: (none)
+  Candidate: 8.4.0-1build5
+  Version table:
+     8.4.0-1build5 500
+        500 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages
+=== fuentes:
+amdgpu.list
+amdgpu-proprietary.list
+brave-browser-release.list
+claude-desktop.list
+extrepo_librewolf.sources
+freecad-maintainers-freecad-stable-noble.list
+kisak-kisak-mesa-noble.list
+mozilla.list
+nodesource.sources
+official-package-repositories.list
+ookla_speedtest-cli.list.bak
+rocm.list.bak
+unityhub.sources
+=== dpkg:
+octave 11.3.0-0build1~ubuntu2404
+octave-common 11.3.0-0build1~ubuntu2404
+octave-doc 11.3.0-0build1~ubuntu2404

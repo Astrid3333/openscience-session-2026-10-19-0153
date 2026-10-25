@@ -1,0 +1,11 @@
+== 1. ilt maxima ==
+{'operation': 'eval', 'ok': True, 'engine': 'Maxima 5.46.0', 'input': 'ilt(1/(s^2+1),t,s)', 'result': 'delta(s)/(s^2+1)'}
+{'operation': 'eval', 'ok': True, 'engine': 'Maxima 5.46.0', 'input': 'ilt(s/(s^2+1),t,s)', 'result': '(s*delta(s))/(s^2+1)'}
+== 2. ode2 2o orden + ic1 x2 ==
+{'operation': 'eval', 'ok': True, 'engine': 'Maxima 5.46.0', 'input': "ode2('diff(y,x,2)+y=0,y,x)", 'result': 'y = %k1*sin(x)+%k2*cos(x)'}
+{'operation': 'eval', 'ok': False, 'engine': 'Maxima 5.46.0', 'input': "ic1(ic1(ode2('diff(y,x,2)+y=0,y,x),x=0,y=1),x=0,'diff(y,x)(0)=0)", 'error': "('diff(y,x))(0) = 0)) first: empty argument.", 'raw': 'display2d:false\nfalse\nr:errcatch(ic1(ic1(ode2(\'diff(y,x,2)+y = 0,y,x),x = 0,y = 1),x = 0,\n               (\'diff(y,x))(0) = 0))\nfirst: empty argument.\n[]\nprint("<<R>>")\n<<R>> \n"<<R>>"\ndisp(if is(equal(r,[])) then [] else first(r))\n[]\n\ndone\nprint("<<E>>")\n<<E>> \n"<<E>>"'}
+== 3. desolve_rk4 ==
+{'ok': True, 'engine': 'sagebrush 0.7.2', 'mode': 'sage', 'seconds': 0.002041529000052833, 'stdout': '[[0, 1], [0.5, 1.796875], [1.0, 3.4346923828125]]'}
+== 4. router field=laplace/ode ==
+{'operation': 'eval', 'ok': True, 'engine_used': 'maxima', 'routed_by': 'field-laplace', 'fallback': True, 'attempts': [{'engine': 'maxima', 'ok': True, 'error': None}], 'result': '1/(s^2+1)', 'engine_result': {'operation': 'eval', 'ok': True, 'engine': 'Maxima 5.46.0', 'input': 'laplace(sin(t),t,s)', 'result': '1/(s^2+1)'}, 'seconds': 0.08231377601623535}
+{'operation': 'eval', 'ok': True, 'engine_used': 'maxima', 'routed_by': 'field-ode', 'fallback': True, 'attempts': [{'engine': 'maxima', 'ok': True, 'error': None}], 'result': 'y = %c*%e^-x', 'engine_result': {'operation': 'eval', 'ok': True, 'engine': 'Maxima 5.46.0', 'input': "ode2('diff(y,x)+y=0,y,x)", 'result': 'y = %c*%e^-x'}, 'seconds': 0.11812996864318848}

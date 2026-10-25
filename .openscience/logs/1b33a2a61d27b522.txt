@@ -1,0 +1,14 @@
+exit=1
+Tools sin modo 'validate' (SKIPPED): 18
+  PASSED:                         345
+  FAILED:                         1
+  ERROR:                          1
+  SKIPPED (sin modo validate):    18
+  [FAILED] attractor_trajectory
+      - check fallido: {"name": "efecto mariposa: distancia final (t=30) >> 1e-8 inicial (umbral d > 1.0)", "passed": false, "got": {"d_final": 0.1795}}
+
+--- TOOLS CON ERROR ---
+--
+  [ERROR] frame_analysis_tool
+      respuesta valida pero sin campo 'validation_passed'
+

@@ -1,0 +1,7 @@
+len(TOOLS)= 362 unique= 362 dups= {}
+TOOLS_INDEX= 362
+run_octave -> handler: False
+run_math_pipeline -> handler: True
+numeral_systems_embedding -> handler: True
+=== PIPELINE_BUILDER_TOOL_SCHEMA aun referenciado?
+107:from math_pipeline_builder_tool import run_math_pipeline, PIPELINE_BUILDER_TOOL_SCHEMA

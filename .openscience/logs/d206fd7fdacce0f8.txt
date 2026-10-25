@@ -1,0 +1,3 @@
+type: list len: 1
+ item type: tuple
+  parts: [('Expr', 'x'), ('int', '2'), ('list', '[[[-1], [0]]]')]

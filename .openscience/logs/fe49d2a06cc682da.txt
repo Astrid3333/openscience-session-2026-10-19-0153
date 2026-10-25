@@ -1,0 +1,4 @@
+type: list has to_list: False
+attrs: ['append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+rows attr: None
+rows() ERR: 'list' object has no attribute 'rows'

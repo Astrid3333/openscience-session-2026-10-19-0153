@@ -1,0 +1,17 @@
+COMPILE-OK
+imports del generador (sin re): ['os', 'sys', 'tempfile']
+regenerado /home/astrid/octave-mcp/skills/octave-mcp/skill_content.py (10703 bytes) desde SKILL.md
+BYTE-IDENTICO
+modo tras regenerar: 755 (heredado 755->755)
+tmp huérfanos: 0
+smoke OK: sync=True
+=== TEST A: .md terminado en 1 comilla:
+error: el codigo generado no compila (unterminated string literal (detected at line 163) (skill_content.py, line 163)); el literal r-string quedo roto (revisa el final de SKILL.md, p. ej. comillas sueltas). No se escribe skill_content.py.
+exit=1
+=== TEST B: .md terminado en 2 comillas:
+error: el literal generado no reproduce SKILL.md; no se reemplaza skill_content.py.
+exit=1
+=== TEST C: sin frontmatter:
+error: frontmatter name es '', se esperaba 'octave-mcp'.
+exit=1
+OK: no se escribio skill_content.py en ningun fallo

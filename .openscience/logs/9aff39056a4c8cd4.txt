@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "elapsed_seconds": 260.9,
+  "total_tools_registered": 362,
+  "with_validate_mode": 326,
+  "overall_health": "degraded",
+  "passed_count": 307,
+  "failed_count": 2,
+  "error_count": 17,
+  "skipped_count": 36,
+  "failed_tools": [
+    "attractor_trajectory",
+    "fem_electromagnetic_tool"
+  ],
+  "errored_tools": [
+    "octave_run",
+    "octave_eval_expr",
+    "octave_run_script",
+    "octave_version",
+    "cfd_tool",
+    "bem_electromagnetic_tool",
+    "dft_tool",
+    "compute_hilbert_transform",
+    "historian",
+    "plague_sir",
+    "frame_analysis_tool",
+    "ternary_combinatorics_tool",
+    "antibiotic_diffusion",
+    "settlement_clusters",
+    "historical_extractor",
+    "abstract_algebra",
+    "plot_workspace_run"
+  ]
+}

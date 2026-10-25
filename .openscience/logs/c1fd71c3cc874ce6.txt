@@ -1,0 +1,17 @@
+validate: False | 8 checks | engine=Maxima 5.46.0 | failed=7
+  FAIL {"name": "maxima_integrate_x2", "passed": false, "got": "disp(if is(equal(r,[])) then [] else first(r))\n8/3", "expected": "8/3 (∫₀²x²dx = 8/3, integración directa de la potencia)"}
+  FAIL {"name": "maxima_integrate_cos", "passed": false, "got": "disp(if is(equal(r,[])) then [] else first(r))\n0", "expected": "0 (primitiva sen(x): sen(π)−sen(0) = 0−0)"}
+  FAIL {"name": "maxima_diff_numeric", "passed": false, "got": "ValueError: could not convert string to float: 'disp(if is(equal(r,[])) then [] else first(r))\\n5.224743167010613'", "expected": "-"}
+  FAIL {"name": "maxima_factor_2_64_minus_1", "passed": false, "got": "disp(if is(equal(r,[])) then [] else first(r))\n3*5*17*257*641*65537*6700417", "expected": "3·5·17·257·641·65537·6700417 = (2^32−1)(2^32+1) = 2^64−1"}
+  FAIL {"name": "maxima_limit_sin_over_x", "passed": false, "got": "disp(if is(equal(r,[])) then [] else first(r))\n1", "expected": "lim_{x→0} sin(x)/x = 1 (límite notable)"}
+  FAIL {"name": "maxima_taylor_exp", "passed": false, "got": "disp(if is(equal(r,[])) then [] else first(r))\n1+x+x^2/2+x^3/6+x^4/24+x^5/120", "expected": "serie de e^x de Maxima hasta x^5 (taylor(...,0,5) incluye x^5; sin término x^6)"}
+  FAIL {"name": "maxima_error_fence", "passed": false, "got": "ok=True, error=None", "expected": "división por cero -> ok=false con mensaje de error (errcatch no revienta el proceso)"}
+OK  eval integrate: {"operation": "eval", "ok": true, "engine": "Maxima 5.46.0", "input": "integrate(x^2*exp(x), x)", "result": "disp(if is(equal(r,[])) then [] else first(r))\n(x^2-2*x+2)*%e^x"}
+OK  eval diff: {"operation": "eval", "ok": true, "engine": "Maxima 5.46.0", "input": "diff(x^3*sin(x), x)", "result": "disp(if is(equal(r,[])) then [] else first(r))\n3*x^2*sin(x)+x^3*cos(x)"}
+OK  eval solve 2 var: {"operation": "eval", "ok": true, "engine": "Maxima 5.46.0", "input": "solve([x+y-2, x^2+y^2-5], [x, y])", "result": "disp(if is(equal(r,[])) then [] else first(r))\n[[x = -(sqrt(6)-2)/2,y = (sqrt(6)+2)/2],\n [x = (sqrt(6)+2)/2,y 
+OK  eval error: {"operation": "eval", "ok": true, "engine": "Maxima 5.46.0", "input": "1/0", "result": "disp(if is(equal(r,[])) then [] else first(r))\n[]"}
+OK  eval syntax err: {"operation": "eval", "ok": false, "engine": "Maxima 5.46.0", "input": "integrate(x^2, x", "error": "incorrect syntax: Missing ) h(integrate(x^2,Spacex); ^", "raw": "display2d:false\nfalse\nincorrect syntax: Missing )\nh(integrate
+OK  batch: {"operation": "batch", "ok": true, "engine": "Maxima 5.46.0", "returncode": 0, "stdout": "display2d:false\nfalse\nfactor(2^32-1)"}
+OK  batch err: {"operation": "batch", "ok": true, "engine": "Maxima 5.46.0", "returncode": 0, "stdout": "display2d:false\nfalse\nMaxima encountered a Lisp error:\n\n SIMPLE-ERROR: parser: end of file while scanning expression.\n\nAutomatically c
+ERR sin expr: ValueError: operation=eval requiere expr
+FAILED

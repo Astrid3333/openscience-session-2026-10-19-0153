@@ -1,0 +1,5 @@
+regenerado /home/astrid/octave-mcp/skills/octave-mcp/skill_content.py (10894 bytes) desde SKILL.md
+sync OK
+4d667ba infra: umap + sub-motores Rust compilados; skill actualizada (343 PASSED)
+   161b6f0..4d667ba  HEAD -> main
+NOTAS-OK

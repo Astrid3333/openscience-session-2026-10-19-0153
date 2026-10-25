@@ -1,0 +1,26 @@
+validate: True | 22 checks | failed=0
+ERR matrix eigenvals: TypeError: 'builtin_function_or_method' object is not iterable
+ERR matrix inverse: TypeError: 'builtin_function_or_method' object is not iterable
+ERR matrix det: TypeError: 'builtin_function_or_method' object is not iterable
+ERR matrix rank: TypeError: 'builtin_function_or_method' object is not iterable
+ERR matrix symbolic eigvects: TypeError: 'builtin_function_or_method' object is not iterable
+ERR matrix jordan: TypeError: 'builtin_function_or_method' object is not iterable
+ERR matrix rref: TypeError: 'builtin_function_or_method' object is not iterable
+ERR matrix trace: TypeError: 'builtin_function_or_method' object is not iterable
+ERR jacobian: TypeError: 'builtin_function_or_method' object is not iterable
+OK  dioph linear: {"operation": "diophantine", "ok": true, "vars": ["x", "y"], "kind": "parametric_linear", "solution": "DiophantineSolution(kind=\"parametric_linear\")", "parameter": "_t", "parametric": ["((5 * _t) + 
+OK  dioph pell: {"operation": "diophantine", "ok": true, "vars": ["x", "y"], "kind": "pell_fundamental", "solution": "DiophantineSolution(kind=\"pell_fundamental\")", "fundamental": ["3", "2"], "pell_d": "2"}
+OK  real_roots: {"operation": "real_roots", "ok": true, "var": "x", "count": 1, "intervals": [{"lo": 1.0, "hi": 2.0, "lo_exact": "('1', '1')", "hi_exact": "('2', '1')"}]}
+OK  real_roots none: {"operation": "real_roots", "ok": true, "var": "x", "count": 0, "intervals": []}
+OK  diff sigue ok: {"operation": "diff", "ok": true, "var": "x", "kind": "alkahest.derived_result", "schema_version": 1, "steps_schema_version": 1, "value": "((sin(x^2) * exp(x)) + (x * 2 * exp(x) * cos(x^2)))", "verifi
+err-ok sin matrix: operation=matrix requiere matrix=[[...],[...]]
+err-ok no rectangular: matrix debe ser rectangular
+Traceback (most recent call last):
+  File "<stdin>", line 42, in <module>
+  File "/home/astrid/octave-mcp/alkahest_cas_tool.py", line 942, in _alkahest_cas_handler
+    return _compute(args)
+           ^^^^^^^^^^^^^^
+  File "/home/astrid/octave-mcp/alkahest_cas_tool.py", line 375, in _compute
+    "shape": [int(d) for d in mat.shape],
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'builtin_function_or_method' object is not iterable

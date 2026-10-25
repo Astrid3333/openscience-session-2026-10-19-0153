@@ -1,0 +1,17 @@
+NT: ['DirichletChi', 'NumberTheoryError', 'annotations', 'discrete_log', 'factorint', 'isprime', 'jacobi_symbol', 'nextprime', 'nt_discrete_log', 'nt_factorint', 'nt_isprime', 'nt_jacobi', 'nt_nextprime', 'nt_nthroot_mod', 'nt_totient', 'nthroot_mod', 'totient']
+parse empty map: (x^2 + y)
+parse mapped: (x^2 + y)
+DR attrs: ['SCHEMA_VERSION', 'STEPS_SCHEMA_VERSION', 'certificate', 'certificate_status', 'derivation', 'steps', 'to_dict', 'to_json', 'value', 'verification']
+  value: 8/3
+  steps: [{'rule': 'int_power_rule', 'before': 'x^2', 'after': '(3^-1 * x^3)', 'side_conditions': []}, {'rule': 'const_fold', 'before': '3^-1', 'after': '1/3', 'side_conditions': []}, {'rule': 'fundamental_the
+  certificate: import Mathlib.Tactic
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv
+import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+
+  verification: {'status': 'certificate_available', 'evidence': 'derivation_log', 'externally_verified': False, 'artifact_format': 'lean4', 'side_conditions': [], 'method': 'derivation_log'}
+definite: 8/3
+Series attrs: ['expr', 'truncated']
+Traceback (most recent call last):
+  File "<stdin>", line 27, in <module>
+AttributeError: 'builtins.Series' object has no attribute 'polynomial'

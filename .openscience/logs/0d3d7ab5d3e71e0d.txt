@@ -1,0 +1,8 @@
+
+For information about changes from previous versions of the signal package, run 'news signal'.
+Please report any issues with the signal package at "https://github.com/gnu-octave/octave-signal/issues/"
+Package Name  | Version | Installation directory
+--------------+---------+-----------------------
+     control  |   4.2.3 | .../xdg-data/octave/api-v61/packages/control-4.2.3
+      signal  |   1.4.8 | .../xdg-data/octave/api-v61/packages/signal-1.4.8
+2 packages installed

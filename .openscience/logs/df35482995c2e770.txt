@@ -1,0 +1,2 @@
+regenerado /home/astrid/octave-mcp/skills/octave-mcp/skill_content.py (11392 bytes) desde SKILL.md
+11438 skills/octave-mcp/skill_content.py

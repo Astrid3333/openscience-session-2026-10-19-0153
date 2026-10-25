@@ -1,0 +1,6 @@
+== resorte amortiguado y''+2y'+5y=0, y(0)=1, y'(0)=0 ==
+cos(2*t)*e^(-t) + 1/2*e^(-t)*sin(2*t)
+== Laplace inversa NO existe (gap) ==
+Traceback (most recent call last):
+  File "<cell>", line 1, in <module>
+NameError: name 'l

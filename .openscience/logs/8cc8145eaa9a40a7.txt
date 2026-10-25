@@ -1,0 +1,3 @@
+matrix_inverse_residual -> {'name': 'matrix_inverse_residual', 'passed': False, 'got': "det=3, inv=[['2/3', '-1/3'], ['-1/3', '2/3']], A*A^-1=[['((2 * 2/3) + (1 * -1/3))', '((2 * -1/3) + (1 * 2/3))'], ['((2 * -1/3) + (1 * 2/3))', '((2 * 2/3) + (1 * -1/3))']]", 'expected': 'det=3, A·A⁻¹=I y A⁻¹=[[2/3,-1/3],[-1/3,2/3]]'}
+diophantine_pell -> {'name': 'diophantine_pell', 'passed': False, 'error': "int() argument must be a string, a bytes-like object or a real number, not 'builtins.Expr'"}
+real_roots_intervals -> {'name': 'real_roots_intervals', 'passed': False, 'error': "argument 'expr': 'tuple' object cannot be converted to 'Expr'"}

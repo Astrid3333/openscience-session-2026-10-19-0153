@@ -1,0 +1,6 @@
+validation_passed: False
+FAIL {'name': 'lispium_fact_100_exact', 'passed': False, 'got': '(fact 100)', 'expected': '100! exacto vs math.factorial (final)0000000000'}
+FAIL {'name': 'lispium_solve_quadratic', 'passed': False, 'got': '(solutions 2 -2)', 'expected': '{2, -2}'}
+FAIL {'name': 'lispium_solve_quartic_exact', 'passed': False, 'got': '(solutions 3 -3 1 -1)', 'expected': '{3, -3, 1, -1} (Ferrari exacto)'}
+checks: 14
+solve: {"operation": "solve", "ok": true, "engine": "lispium 0.16.0", "exit_code": 0, "seconds": 0.002, "result": "; (solve (+ (^ x 4) (* -10 (^ x 2)) 9) x)\n(solutions 3 -3 1 -1)", "outputs": ["(solutions 3 -3 1 -1)"]}

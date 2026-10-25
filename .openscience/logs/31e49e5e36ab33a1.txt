@@ -1,0 +1,8 @@
+Total de tools registradas: 371
+AVISO: 4 chunk(s) escribieron a stderr -- correr con PARALLEL_WORKERS=1 --verbose si algo da ERROR para aislar cual chunk fue.
+RESUMEN
+  Total tools registradas:        371
+  Con modo validate (evaluadas):  353
+  PASSED:                         353
+  FAILED:                         0
+  ERROR:                          0

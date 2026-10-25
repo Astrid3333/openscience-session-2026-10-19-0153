@@ -1,0 +1,40 @@
+      OK  nt_isolated_fence
+      OK  derived_result_contract
+      OK  certificate_lean_export
+      OK  matrix_eigenvals_2x2
+      OK  matrix_inverse_residual
+      OK  jacobian_analytic
+      OK  diophantine_linear
+      OK  diophantine_pell
+      OK  real_roots_intervals
+
+[2] diff(sin(x^2)*exp(x)) ->
+      value: ((sin(x^2) * exp(x)) + (x * 2 * exp(x) * cos(x^2)))
+      steps: 6 (reglas: diff_identity, power_rule, diff_sin, diff_exp, product_rule, mul_one)
+      verification: unverified
+
+[3] ∫_0^2 x^2 dx -> value=8/3
+      certificate: 1177 chars, status=certificate_available
+      primeras lineas del Lean 4:
+        import Mathlib.Tactic
+        import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+        import Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv
+
+[4] solve {x+y=2, x^2+y^2=5} -> 2 soluciones (groebner):
+      {'x': '(2 + (-1/2 * (2 + sqrt(6))))', 'y': '((2 + sqrt(6)) * 1/2)'}
+      {'x': '(2 + (-1/2 * (2 + (-1 * sqrt(6)))))', 'y': '(1/2 * (2 + (-1 * sqrt(6))))'}
+
+[5] sum_indefinite(k^2) -> (k * (1/6 + (k * -1/2) + (k^2 * 1/3)))
+      (antidiferencia Delta F = k^2, con steps=1)
+
+[6] factorint(2^64+1) -> {'n': 18446744073709551617, 'engine': 'sympy_fallback', 'fallback_reason': 'alkahest: crash signal 4 (SIGILL)', 'factors': {'274177': 1, '67280421310721': 1}}
+
+[7] diff sin expr -> "ValueError: operation=diff requiere expr"
+Traceback (most recent call last):
+  File "/tmp/opencode/test_alkahest_mcp.py", line 132, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/tmp/opencode/test_alkahest_mcp.py", line 125, in main
+    print("\nTODO OK" if r.get("_rpc_error") else "\nPRUEBA COMPLETA")
+                         ^^^^^
+AttributeError: 'str' object has no attribute 'get'

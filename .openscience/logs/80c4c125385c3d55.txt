@@ -1,0 +1,11 @@
+exit=0
+RESUMEN
+======================================================================
+  Total tools registradas:        366
+  Con modo validate (evaluadas):  348
+  PASSED:                         348
+  FAILED:                         0
+  ERROR:                          0
+  SKIPPED (sin modo validate):    18
+======================================================================
+

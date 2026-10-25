@@ -1,0 +1,6 @@
+A canonicalise: \partial_{x}(f) \partial_{y}(f)-\partial_{x}(f) \partial_{y}(f)
+A collect     : 0
+B sub3 fail: substitute(): incompatible function arguments. The following argument types are supported:
+    1. (ex: cadabra2.Ex, rule
+C map_sympy type: Ex -> \sum(x^{2})()
+C SympyBridge: SympyBridge <cadabra2.SympyBridge object at 0x7e2ad014e1f0>

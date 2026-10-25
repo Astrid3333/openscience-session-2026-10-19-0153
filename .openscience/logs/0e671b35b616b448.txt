@@ -1,0 +1,6 @@
+exit=0
+22 skills: ['ai4s-agent', 'computer-use', 'customize-opencode', 'docx', 'domain-check', 'experiment-suite', 'integrity-auditor', 'large-file', 'literature-survey', 'mindmap-render', 'modal-run', 'octave-mcp', 'open-science-browser', 'paper-writer', 'pdf', 'pptx', 'publication-figures', 'remote-compute', 'research-explorer', 'stats-integrity', 'traceability-review', 'xlsx']
+octave-mcp location: NO ENCONTRADO
+=== config resuelve sin error:
+exit=0
+skills en config resuelta: {"paths": ["/home/astrid/octave-mcp/skills"]}

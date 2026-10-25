@@ -1,0 +1,13 @@
+    OK   pin-lispium-float-bigint: (^ 2 61) -> 2.305843009213694e18: degrada enteros grandes a float
+    OK   pin-lispium-float-factorial: (factorial 20) -> 2.43290200817664e18: 20! exacto en otros motores
+    OK   pin-lispium-eco-simplify: simplify devuelve (+ (^ (+ x 1) 2) (- (^ x 2)) (* -2 x) -1) (potencias sin reducir): no evalua identidades simbolicas
+    OK   pin-sage-var-no-inyecta: var('qq ww') no inyecta en globals ('False'): usar x, y = var('x y')
+    OK   pin-alkahest-basel-forma: sum 1/k^2 -> PySumError E-SUM-002 (texto plano, sin ok): Basel exige la forma k^(-2)
+    OK   pin-sage-function-aplica: function('y', t) devuelve el closure SIN aplicar (TypeError al sumar): usar function('y')(t)
+    OK   pin-maxima-ode2-false: ode2 sin ' en diff -> ok=True con 'false': la derivada debe ir cotada ('diff(...)), y ok True no es exito
+    OK   pin-maxima-ilt-orden: ilt con el orden de laplace (f,t,s) -> ok=True con delta(s)/(s^2+1): ilt va (f,s,t), y ok True no es exito
+    ----
+    63/63 PASS
+
+GUARD: OK bateria cross-check 63/63 PASS.
+EXIT: 0

@@ -1,0 +1,13 @@
+"var('x y')\nprint('y' in globals(), y)" -> Traceback (most recent call last):
+  File "<cell>", line 2, in <module>
+NameError: name 'y' is not defined
+'import sage.calculus.var as v\nprint(v)' -> Traceback (most recent call last):
+  File "<cell>", line 1, in <module>
+ModuleNotFoundError: No module named 'sage'
+"print(var('x y'))\nprint('y' in globals())" -> (x, y)
+False
+"from sage.all import var as svar\nsvar('x y')\nprint('y' " -> Traceback (most recent call last):
+  File "<cell>", line 1, in <module>
+ModuleNotFoundError: No module named 'sage'
+'y = SR(1)+1\nprint(y)' -> 2
+"print([k for k in globals() if k in ('var','SR','solve'" -> ['var', 'SR', 'solve']

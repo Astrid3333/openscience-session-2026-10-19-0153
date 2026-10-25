@@ -1,0 +1,11 @@
+regenerado 8038 bytes
+=== 1) imprime identico a SKILL.md:
+OK-cmp
+=== 2) metadata:
+name: octave-mcp
+=== 3) import + sync + main:
+sync: True | SKILL_MD bytes: 6199
+=== 4) copia sola en /tmp (sin .md):
+import OK | sync: None | imprime 6199 chars
+=== 5) stdlib-only:
+OK, sync: True

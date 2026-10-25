@@ -1,0 +1,11 @@
+double
+100
+exit=1
+Total de tools registradas: 365
+Tools sin modo 'validate' (SKIPPED): 18
+AVISO: 4 chunk(s) escribieron a stderr -- correr con PARALLEL_WORKERS=1 --verbose si algo da ERROR para aislar cual chunk fue.
+  Total tools registradas:        365
+  Con modo validate (evaluadas):  347
+  PASSED:                         344
+  FAILED:                         1
+  ERROR:                          2

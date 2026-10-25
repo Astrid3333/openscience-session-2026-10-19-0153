@@ -1,0 +1,6 @@
+version attr: NONE
+fermion ERR: A list property cannot be assigned to a single object.
+elim_kron: KroneckerDelta(m , n) A_{m}
+expand: (x + y)**2
+simplify: 0
+Ex invalid: NO ERR (silent!)

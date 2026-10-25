@@ -1,0 +1,11 @@
+COMPILE-SIN-WARNINGS
+regenerado /home/astrid/octave-mcp/skills/octave-mcp/skill_content.py (10703 bytes) desde SKILL.md
+smoke OK: sync=True, name= octave-mcp
+ M skills/octave-mcp/SKILL.md
+ M skills/octave-mcp/skill_content.py
+?? skills/octave-mcp/regenerate_skill_content.py
+36b3e24 regenerador persistente + CRLF en frontmatter: segunda ronda de revision
+=== copia de revisión actualizada:
+246 /home/astrid/Documents/OpenScience/sessions/2026-10-19-0153/skill_content_review.py
+=== notas:
+OK

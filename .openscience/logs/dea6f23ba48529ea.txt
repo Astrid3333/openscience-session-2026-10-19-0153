@@ -1,0 +1,5 @@
+truncated(): ((1 * 1) + (x * 1) + (1/2 * x^2) + (1/6 * x^3)) <class 'builtins.Expr'>
+poly at 0.3: 1.3495 expected: 1.3498375
+const compile: 2.0
+parse 0.3: 2.9999999999999999e-1
+int bounds str: 8/3

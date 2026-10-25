@@ -1,0 +1,8 @@
+SympyBridge attrs: ['from_sympy', 'to_sympy']
+inst attrs: ['from_sympy', 'to_sympy']
+  to_sympy: Add x(UP2) + 1
+  from_sympy err: from_sympy(): incompatible function arguments. The following argument types are supported:
+    1. (s
+sub 'x = a+b' -> x^{2} + y
+sub 'x -> a+b' -> x^{2} + y
+sub 'x = a + b' -> x^{2} + y

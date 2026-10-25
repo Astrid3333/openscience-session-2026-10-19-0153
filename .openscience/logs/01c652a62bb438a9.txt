@@ -1,0 +1,4 @@
+ex m n k -> 'm n k'
+list_property: ['cadabra2.list_property: No constructor defined!']
+labelled_property: ['cadabra2.labelled_property: No constructor defined!']
+comma-list OK

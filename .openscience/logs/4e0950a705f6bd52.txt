@@ -1,0 +1,12 @@
+COMPILE-OK
+regenerado /home/astrid/octave-mcp/skills/octave-mcp/skill_content.py (10703 bytes) desde SKILL.md
+BYTE-IDENTICO
+smoke OK: sync=True
+=== A: 1 comilla final:
+exit=1
+=== B: 2 comillas finales:
+exit=1
+=== C: sin frontmatter:
+exit=1
+=== D: name cambiado en el frontmatter:
+exit=1

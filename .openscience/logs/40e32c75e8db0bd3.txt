@@ -1,0 +1,38 @@
+MAXIMA
+  diff(sin(x^2)*exp(x),x) -> (True, '%e^x*sin(x^2)+2*x*%e^x*cos(x^2)')
+  integrate(x^2*exp(-x),x,0,inf) -> (True, '2')
+  factor(x^4-1) -> (True, '(x-1)*(x+1)*(x^2+1)')
+  solve([x+y=3,x-y=1],[x,y]) -> (True, '[[x = 2,y = 1]]')
+  eulerphi(100) -> (True, 'eulerphi(100)')
+  det([1,2],[3,4]) -> (True, 'det([1,2],[3,4])')
+  primep(2^61-1) -> (True, 'true')
+  limit((1+1/n)^n,n,inf) -> (True, '%e')
+  gcd(462,1071) -> (True, '21')
+  radcan((x+1)^2-x^2-2*x-1) -> (True, '0')
+  sum(1/k^2,k=1,inf) -> (False, 'sum: expected exactly 4 arguments but got 3: [1/k^2,k = 1,inf]')
+  2^61-1 -> (True, '2305843009213693951')
+SAGE
+  print(diff(sin(x^2)*exp(x), x)) -> (True, '2*x*cos(x^2)*e^x + e^x*sin(x^2)')
+  print(integrate(x^2*exp(-x), (x,0,oo))) -> (True, '2')
+  print(factor(x^4-1)) -> (True, '(x^2 + 1)*(x + 1)*(x - 1)')
+  print(solve([x+y==3,x-y==1],[x,y])) -> (False, 'Traceback (most recent call last):\n  File "<cell>", line 1, in <module>\nNameError: name \'y\' is not defined')
+  print(euler_phi(100)) -> (True, '40')
+  print(matrix(ZZ,[[1,2],[3,4]]).det()) -> (True, '-2')
+  print(is_prime(2^61-1)) -> (True, 'True')
+  print(limit((1+1/n)^n, n, oo)) -> (False, 'Traceback (most recent call last):\n  File "<cell>", line 1, in <module>\nTypeError: unsupported operand type(s) for /: \'Integer\' and \'function\'')
+  print(gcd(462,1071)) -> (True, '21')
+  print(((x+1)^2-x^2-2*x-1).full_simplify()) -> (True, '0')
+  print(sum(1/k^2,(k,1,oo))) -> (False, 'Traceback (most recent call last):\n  File "<cell>", line 1, in <module>\nNameError: name \'k\' is not defined')
+LIPIUM
+  (diff (sin (* x x)) x) -> (True, '; (diff (sin (* x x)) x)\n(* 2 (cos (^ x 2)) x)')
+  (^ 2 61) -> (True, '; (^ 2 61)\n2.305843009213694e18')
+  (gcd 462 1071) -> (True, '; (gcd 462 1071)\n21')
+  (factorial 5) -> (True, '; (factorial 5)\n120')
+  (+ (* 3 x) 2) -> (True, '; (+ (* 3 x) 2)\n(+ (* 3 x) 2)')
+lisp op factor -> {"operation": "factor", "ok": true, "engine": "lispium 0.16.0", "exit_code": 0, "seconds": 0.002, "result": "; (factor x^4-1 x)\nx^4-1", "outputs": ["
+lisp op diff -> {"operation": "diff", "ok": false, "engine": "lispium 0.16.0", "exit_code": 1, "seconds": 0.002, "error": "/tmp/lispium_62qtkujc.lspm:1:1: Eval error:
+lisp op solve -> {"operation": "solve", "ok": true, "engine": "lispium 0.16.0", "exit_code": 0, "seconds": 0.002, "result": "; (solve x^2-4=0 x)\n(solve x^2-4=0 x)", "
+lisp op integrate -> {"operation": "integrate", "ok": true, "engine": "lispium 0.16.0", "exit_code": 0, "seconds": 0.002, "result": "; (integrate x^2 x)\n(* x^2 x)", "outp
+CADABRA2
+  print(str(evaluate(Ex('diff(sin(x^2)*exp(x), x)')) -> (True, 'diff(\\exp(x) sin(x^{2}) , x)')
+  print(str(SympyBridge(Ex('x^4-1')).to_sympy())) -> (True, 'x(UP4) - 1')

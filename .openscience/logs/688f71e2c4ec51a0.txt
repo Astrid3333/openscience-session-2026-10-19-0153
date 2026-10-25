@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "/home/astrid/octave-mcp/.venv/lib/python3.12/site-packages/scipy/integrate/_ivp/ivp.py", line 582, in solve_ivp
+    t0, tf = map(float, t_span)
+    ^^^^^^
+ValueError: too many values to unpack (expected 2)

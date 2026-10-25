@@ -1,0 +1,13 @@
+=== cargo:
+/home/astrid/.cargo/bin/cargo
+cargo 1.96.1 (356927216 2026-06-26)
+=== umap en el venv:
+ModuleNotFoundError: No module named 'umap'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ImportError: cannot import name 'TSNE' from 'sklearn' (/home/astrid/octave-mcp/.venv/lib/python3.12/site-packages/sklearn/__init__.py)
+=== .venv-pyscf:
+NO existe
+=== Octave pkgs:
+no packages installed.
+=== estado attractor (del skill, bug conocido): d_final=0.1795 < 1.0

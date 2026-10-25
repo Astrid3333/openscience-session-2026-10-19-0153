@@ -1,0 +1,1 @@
+skill_content bytes 15482

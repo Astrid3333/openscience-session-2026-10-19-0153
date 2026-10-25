@@ -1,0 +1,10 @@
+str: x^{2} + y
+tree: {\sum}
+  1:{x}
+  2:  ^{1}  2
+  3:{y}
+
+tree type: str
+sub x^2->a: a + y
+sub con potencia explicita: x^{2} + y
+Ex x**2: (x)**2 + 1

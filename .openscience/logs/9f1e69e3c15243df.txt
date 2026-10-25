@@ -1,0 +1,19 @@
+totient(2^64+1)...
+Fatal Python error: Illegal instruction
+
+Current thread 0x00007fc7501e1080 (most recent call first):
+  File "/home/astrid/octave-mcp/.venv/lib/python3.12/site-packages/alkahest/number_theory.py", line 72 in totient
+  File "<stdin>", line 5 in <module>
+timeout: the monitored command dumped core
+== rc=0 (totient) ==
+timeout: the monitored command dumped core
+/bin/bash: line 13: 47072 Illegal instruction     timeout 90 .venv/bin/python -c "
+import alkahest.number_theory as nt
+print('isprime(2^64+1):', nt.isprime(2**64+1))
+print('nextprime(2^120):', nt.nextprime(2**120))
+" 2>&1
+== rc=132 (isprime/nextprime) ==
+sympy F6: {274177: 1, 67280421310721: 1} 0.00s
+sympy 2^71-1: {228479: 1, 48544121: 1, 212885833: 1} 0.01s
+== rc=0 (sympy fallback) ==
+import alkahest: 0.12s

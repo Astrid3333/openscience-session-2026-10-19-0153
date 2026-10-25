@@ -1,0 +1,5 @@
+sagebrush file: /home/astrid/octave-mcp/.venv/lib/python3.12/site-packages/sagebrush/__init__.py
+attrs: ['ap', 'linalg', 'mf', 'modsym', 'nf', 'poly']
+
+mcp_server file: /home/astrid/octave-mcp/.venv/lib/python3.12/site-packages/sagebrush/mcp_server.py
+mcp_server attrs: ['GUIDE', 'GUIDE_URI', 'INSTRUCTIONS', 'PROTOCOL_VERSIONS', 'Server', 'TOOLS', 'json', 'main', 'search_docs', 'sys', 'threading']

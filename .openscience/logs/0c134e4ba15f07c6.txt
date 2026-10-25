@@ -1,0 +1,3 @@
+sort_product: ψ_{1} ψ_{2}-ψ_{1} ψ_{2}
+collect      : 0
+elim_kron delta: δ_{m n} A^{m}
