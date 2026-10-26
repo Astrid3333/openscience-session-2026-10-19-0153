@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+  File "/usr/lib/python3/dist-packages/PIL/Image.py", line 84, in <module>
+    from . import _imaging as core
+ImportError: /lib/x86_64-linux-gnu/libopenjp2.so.7: invalid ELF header

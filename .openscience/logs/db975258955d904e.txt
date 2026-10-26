@@ -1,0 +1,9 @@
+STDOUT: {
+  "status": "fatal_error",
+  "detail": "no se pudo obtener tools/list_full del subprocess",
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/home/astrid/octave-mcp/server.py\", line 89, in <module>\n    import ocas_symbolic_tool  # auto-registra via tool_registry, no requiere mas ediciones\n    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/astrid/octave-mcp/ocas_symbolic_tool.py\", line 24, in <module>\n    import ocas\nModuleNotFoundError: No module named 'ocas'\n"
+}
+
+STDERR: 
+EXIT: 2
+ELAPSED: 1.3 s

@@ -1,0 +1,11 @@
+blender {'command': '/home/astrid/.local/bin/blender-mcp', 'env': {'BLENDER_HOST': 'localhost', 'BLENDER_PORT': '9876'}}
+octave {'command': '/home/astrid/octave-mcp/.venv/bin/python', 'args': ['/home/astrid/octave-mcp/server.py']}
+freecad {'command': 'python3', 'args': ['/home/astrid/mcp-free-cad-/freecad_mcp_server.py']}
+openbb-mcp {'command': 'uvx', 'args': ['--from', 'openbb-mcp-server', '--with', 'openbb', 'openbb-mcp', '--transport', 'stdio']}
+psyche-mcp {'command': '/home/astrid/psyche-env/bin/python3', 'args': ['/home/astrid/psyche-mcp/server.py']}
+physics-mcp {'command': '/home/astrid/physics-env/bin/python3', 'args': ['/home/astrid/physics-mcp/server.py']}
+microbio-mcp {'command': '/home/astrid/microbio-env/bin/python3', 'args': ['/home/astrid/microbio-mcp/server.py']}
+biosim-mcp {'command': '/home/astrid/basico-env/bin/python3', 'args': ['/home/astrid/biosim-mcp/server.py']}
+mcp-blender-full {'command': '/home/astrid/mcp-blender/.venv/bin/mcp-blender', 'args': ['--port', '9877']}
+unrealMCP {'command': 'uv', 'args': ['--directory', '/home/astrid/unreal-mcp/Python', 'run', 'unreal_mcp_server.py']}
+github {'command': '/home/astrid/.local/bin/github-mcp-server', 'args': ['stdio'], 'env': {'GITHUB_PERSONAL_ACCESS_TOKEN': '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', 'GITHUB_TOOLSETS': 'repos,issues,pull_requests,actions,code_security,discussions,git,labels'}}

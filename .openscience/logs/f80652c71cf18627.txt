@@ -1,0 +1,4 @@
+BAD: /home/astrid/.local/lib/python3.12/site-packages/watchfiles-1.2.0.dist-info/entry_points.txt 'utf-8' codec can't decode byte 0xa9 in position 2: invalid start byte
+BAD: /home/astrid/.local/lib/python3.12/site-packages/keyring-25.7.0.dist-info/entry_points.txt 'utf-8' codec can't decode byte 0xf0 in position 1: invalid continuation byte
+BAD: /usr/lib/python3/dist-packages/pipx-1.4.3.dist-info/entry_points.txt 'utf-8' codec can't decode byte 0x9d in position 11: invalid start byte
+BAD: /usr/lib/python3/dist-packages/userpath-1.9.1.dist-info/entry_points.txt 'utf-8' codec can't decode byte 0x90 in position 1: invalid start byte

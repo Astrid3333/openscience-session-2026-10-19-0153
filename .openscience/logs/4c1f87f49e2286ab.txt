@@ -1,0 +1,8 @@
+started pid=6069
+    PID     ELAPSED CMD
+   6069       00:05 /bin/bash -c cd /home/astrid/octave-mcp && nohup ./.venv/bin/python run_all_validations.py > /tmp/opencode/validations_full.log 2>&1 & echo "started pid=$!"; sleep 5; tail -5 /tmp/opencode/validations_full.log; ps -o pid,etime,cmd -p $! 2>/dev/null
+
+
+<shell_metadata>
+shell tool terminated command after exceeding timeout 120000 ms. If this command is expected to take longer and is not waiting for interactive input, retry with a larger timeout value in milliseconds.
+</shell_metadata>
