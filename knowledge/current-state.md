@@ -40,18 +40,19 @@
   `health_check_tool.py` al manifiesto ruff (18→19 archivos).
 - Verification state: suite completa rerun **372 registradas / 372
   evaluadas / 372 PASSED / 0 FAILED / 0 ERROR / 0 SKIPPED / 157.2 s**
-  (4 workers, health_check full como regresión del cambio); e2e
-  subset por JSON-RPC directo (9.8 s, 2 ok + 1 unknown; no_tools
-  0 s exit 1; tipo → isError); batería **99/99**; guard exit 0;
-  ruff 0 en los 19 archivos del manifiesto; smoke PASS (369);
-  pdelta `buckling_load` funcional (fix `N_max`), valores
-  deterministas timber/concrete/pdelta intactos.
+  (4 workers, health_check full como regresión del cambio); e2e del
+  subset PASS por JSON-RPC directo (9.8 s) Y vía MCP real
+  `octave_call_tool` (6.2 s, 2 ok + 1 unknown; no_videos 0 s exit 1;
+  tipo → isError); batería **99/99**; guard exit 0; ruff 0 en los 19
+  archivos del manifiesto; smoke PASS (369); **CI GitHub verde para
+  `604f8dc`** (CI 55 s + README drift 53 s); pdelta `buckling_load`
+  funcional (fix `N_max`), valores deterministas timber/concrete/pdelta
+  intactos.
 - CI en GitHub Actions verde y sin anotaciones (commit `78d2ff4`:
   checkout@v7 + setup-python@v7 node24, runner fijo ubuntu-24.04);
   README drift check también verde.
-- Known pending: reintento de `health_check_tool` en Claude Desktop
-  (GUI, usuario; mi cliente MCP local sigue con -32001 incluso en
-  `get_tool_schema` → e2e del subset verificado por JSON-RPC
-  directo); notas del ciclo 2026-10-27 sin push.
+- Known pending: reintento visual de `health_check_tool` en Claude
+  Desktop (GUI, usuario); mi cliente MCP local ya se recuperó del
+  -32001; notas del ciclo 2026-10-27 commiteadas (`42d2b3e`) sin push.
 - Next action: reportar el ciclo 6 al usuario (lista «todo pero en
   orden» completa) y empujar las notas al cerrar el día.
